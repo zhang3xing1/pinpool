@@ -11,3 +11,3282 @@
  *= require_self
  *= require_tree .
  */
+
+@charset "UTF-8";
+@font-face {
+    font-family: "SSStandard";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/svn/fonts/ss-standard.eot?#iefix") format("embedded-opentype"), url("/svn/fonts/ss-standard.woff") format("woff"), url("/svn/fonts/ss-standard.ttf") format("truetype"), url("/svn/fonts/ss-standard.svg#SSStandard") format("svg");
+}
+.ss-icon, .ss-icon.ss-standard, [class^="ss-"]:before, [class*=" ss-"]:before, .ss-standard[class^="ss-"]:before, .ss-standard[class*=" ss-"]:before, .right[class^="ss-"]:after, .right[class*=" ss-"]:after, .ss-standard.right[class^="ss-"]:after, .ss-standard.right[class*=" ss-"]:after {
+    -moz-font-feature-settings: "liga";
+    font-family: "SSStandard";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    text-rendering: optimizelegibility;
+    white-space: nowrap;
+}
+.right[class^="ss-"]:before, .ss-standard.right[class*=" ss-"]:before {
+    content: "";
+    display: none;
+}
+.ss-cursor:before, .ss-cursor.right:after {
+    content: "";
+}
+.ss-crosshair:before, .ss-crosshair.right:after {
+    content: "⌖";
+}
+.ss-search:before, .ss-search.right:after {
+    content: "🔎";
+}
+.ss-zoomin:before, .ss-zoomin.right:after {
+    content: "";
+}
+.ss-zoomout:before, .ss-zoomout.right:after {
+    content: "";
+}
+.ss-view:before, .ss-view.right:after {
+    content: "👀";
+}
+.ss-attach:before, .ss-attach.right:after {
+    content: "📎";
+}
+.ss-link:before, .ss-link.right:after {
+    content: "🔗";
+}
+.ss-move:before, .ss-move.right:after {
+    content: "";
+}
+.ss-write:before, .ss-write.right:after {
+    content: "✎";
+}
+.ss-writingdisabled:before, .ss-writingdisabled.right:after {
+    content: "";
+}
+.ss-erase:before, .ss-erase.right:after {
+    content: "✐";
+}
+.ss-compose:before, .ss-compose.right:after {
+    content: "📝";
+}
+.ss-lock:before, .ss-lock.right:after {
+    content: "🔒";
+}
+.ss-unlock:before, .ss-unlock.right:after {
+    content: "🔓";
+}
+.ss-key:before, .ss-key.right:after {
+    content: "🔑";
+}
+.ss-backspace:before, .ss-backspace.right:after {
+    content: "⌫";
+}
+.ss-ban:before, .ss-ban.right:after {
+    content: "🚫";
+}
+.ss-trash:before, .ss-trash.right:after {
+    content: "";
+}
+.ss-target:before, .ss-target.right:after {
+    content: "◎";
+}
+.ss-tag:before, .ss-tag.right:after {
+    content: "";
+}
+.ss-bookmark:before, .ss-bookmark.right:after {
+    content: "🔖";
+}
+.ss-flag:before, .ss-flag.right:after {
+    content: "⚑";
+}
+.ss-like:before, .ss-like.right:after {
+    content: "👍";
+}
+.ss-dislike:before, .ss-dislike.right:after {
+    content: "👎";
+}
+.ss-heart:before, .ss-heart.right:after {
+    content: "♥";
+}
+.ss-halfheart:before, .ss-halfheart.right:after {
+    content: "";
+}
+.ss-star:before, .ss-star.right:after {
+    content: "⋆";
+}
+.ss-halfstar:before, .ss-halfstar.right:after {
+    content: "";
+}
+.ss-sample:before, .ss-sample.right:after {
+    content: "";
+}
+.ss-crop:before, .ss-crop.right:after {
+    content: "";
+}
+.ss-layers:before, .ss-layers.right:after {
+    content: "";
+}
+.ss-phone:before, .ss-phone.right:after {
+    content: "📞";
+}
+.ss-phonedisabled:before, .ss-phonedisabled.right:after {
+    content: "";
+}
+.ss-rss:before, .ss-rss.right:after {
+    content: "";
+}
+.ss-facetime:before, .ss-facetime.right:after {
+    content: "";
+}
+.ss-reply:before, .ss-reply.right:after {
+    content: "↩";
+}
+.ss-send:before, .ss-send.right:after {
+    content: "";
+}
+.ss-mail:before, .ss-mail.right:after {
+    content: "✉";
+}
+.ss-inbox:before, .ss-inbox.right:after {
+    content: "📥";
+}
+.ss-chat:before, .ss-chat.right:after {
+    content: "💬";
+}
+.ss-user:before, .ss-user.right:after {
+    content: "👤";
+}
+.ss-femaleuser:before, .ss-femaleuser.right:after {
+    content: "👧";
+}
+.ss-users:before, .ss-users.right:after {
+    content: "👥";
+}
+.ss-cart:before, .ss-cart.right:after {
+    content: "";
+}
+.ss-creditcard:before, .ss-creditcard.right:after {
+    content: "💳";
+}
+.ss-dollarsign:before, .ss-dollarsign.right:after {
+    content: "💲";
+}
+.ss-barchart:before, .ss-barchart.right:after {
+    content: "📊";
+}
+.ss-piechart:before, .ss-piechart.right:after {
+    content: "";
+}
+.ss-box:before, .ss-box.right:after {
+    content: "📦";
+}
+.ss-home:before, .ss-home.right:after {
+    content: "⌂";
+}
+.ss-globe:before, .ss-globe.right:after {
+    content: "🌎";
+}
+.ss-navigate:before, .ss-navigate.right:after {
+    content: "";
+}
+.ss-compass:before, .ss-compass.right:after {
+    content: "";
+}
+.ss-signpost:before, .ss-signpost.right:after {
+    content: "";
+}
+.ss-map:before, .ss-map.right:after {
+    content: "";
+}
+.ss-location:before, .ss-location.right:after {
+    content: "";
+}
+.ss-pin:before, .ss-pin.right:after {
+    content: "📍";
+}
+.ss-database:before, .ss-database.right:after {
+    content: "";
+}
+.ss-hdd:before, .ss-hdd.right:after {
+    content: "";
+}
+.ss-music:before, .ss-music.right:after {
+    content: "♫";
+}
+.ss-mic:before, .ss-mic.right:after {
+    content: "🎤";
+}
+.ss-volume:before, .ss-volume.right:after {
+    content: "🔈";
+}
+.ss-lowvolume:before, .ss-lowvolume.right:after {
+    content: "🔉";
+}
+.ss-highvolume:before, .ss-highvolume.right:after {
+    content: "🔊";
+}
+.ss-airplay:before, .ss-airplay.right:after {
+    content: "";
+}
+.ss-camera:before, .ss-camera.right:after {
+    content: "📷";
+}
+.ss-picture:before, .ss-picture.right:after {
+    content: "🌄";
+}
+.ss-video:before, .ss-video.right:after {
+    content: "📹";
+}
+.ss-play:before, .ss-play.right:after {
+    content: "▶";
+}
+.ss-pause:before, .ss-pause.right:after {
+    content: "";
+}
+.ss-stop:before, .ss-stop.right:after {
+    content: "■";
+}
+.ss-record:before, .ss-record.right:after {
+    content: "●";
+}
+.ss-rewind:before, .ss-rewind.right:after {
+    content: "⏪";
+}
+.ss-fastforward:before, .ss-fastforward.right:after {
+    content: "⏩";
+}
+.ss-skipback:before, .ss-skipback.right:after {
+    content: "⏮";
+}
+.ss-skipforward:before, .ss-skipforward.right:after {
+    content: "⏭";
+}
+.ss-eject:before, .ss-eject.right:after {
+    content: "⏏";
+}
+.ss-repeat:before, .ss-repeat.right:after {
+    content: "🔁";
+}
+.ss-replay:before, .ss-replay.right:after {
+    content: "↺";
+}
+.ss-shuffle:before, .ss-shuffle.right:after {
+    content: "🔀";
+}
+.ss-book:before, .ss-book.right:after {
+    content: "📕";
+}
+.ss-openbook:before, .ss-openbook.right:after {
+    content: "📖";
+}
+.ss-notebook:before, .ss-notebook.right:after {
+    content: "📓";
+}
+.ss-grid:before, .ss-grid.right:after {
+    content: "";
+}
+.ss-rows:before, .ss-rows.right:after {
+    content: "";
+}
+.ss-columns:before, .ss-columns.right:after {
+    content: "";
+}
+.ss-thumbnails:before, .ss-thumbnails.right:after {
+    content: "";
+}
+.ss-desktop:before, .ss-desktop.right:after {
+    content: "💻";
+}
+.ss-laptop:before, .ss-laptop.right:after {
+    content: "";
+}
+.ss-tablet:before, .ss-tablet.right:after {
+    content: "";
+}
+.ss-cell:before, .ss-cell.right:after {
+    content: "📱";
+}
+.ss-battery:before, .ss-battery.right:after {
+    content: "🔋";
+}
+.ss-highbattery:before, .ss-highbattery.right:after {
+    content: "";
+}
+.ss-mediumbattery:before, .ss-mediumbattery.right:after {
+    content: "";
+}
+.ss-lowbattery:before, .ss-lowbattery.right:after {
+    content: "";
+}
+.ss-emptybattery:before, .ss-emptybattery.right:after {
+    content: "";
+}
+.ss-downloadcloud:before, .ss-downloadcloud.right:after {
+    content: "";
+}
+.ss-download:before, .ss-download.right:after {
+    content: "";
+}
+.ss-uploadcloud:before, .ss-uploadcloud.right:after {
+    content: "";
+}
+.ss-upload:before, .ss-upload.right:after {
+    content: "";
+}
+.ss-fork:before, .ss-fork.right:after {
+    content: "";
+}
+.ss-merge:before, .ss-merge.right:after {
+    content: "";
+}
+.ss-refresh:before, .ss-refresh.right:after {
+    content: "↻";
+}
+.ss-sync:before, .ss-sync.right:after {
+    content: "";
+}
+.ss-loading:before, .ss-loading.right:after {
+    content: "";
+}
+.ss-wifi:before, .ss-wifi.right:after {
+    content: "";
+}
+.ss-connection:before, .ss-connection.right:after {
+    content: "";
+}
+.ss-file:before, .ss-file.right:after {
+    content: "📄";
+}
+.ss-folder:before, .ss-folder.right:after {
+    content: "📁";
+}
+.ss-quote:before, .ss-quote.right:after {
+    content: "“";
+}
+.ss-text:before, .ss-text.right:after {
+    content: "";
+}
+.ss-font:before, .ss-font.right:after {
+    content: "";
+}
+.ss-print:before, .ss-print.right:after {
+    content: "⎙";
+}
+.ss-fax:before, .ss-fax.right:after {
+    content: "📠";
+}
+.ss-list:before, .ss-list.right:after {
+    content: "";
+}
+.ss-layout:before, .ss-layout.right:after {
+    content: "";
+}
+.ss-action:before, .ss-action.right:after {
+    content: "";
+}
+.ss-redirect:before, .ss-redirect.right:after {
+    content: "↪";
+}
+.ss-expand:before, .ss-expand.right:after {
+    content: "⤢";
+}
+.ss-contract:before, .ss-contract.right:after {
+    content: "";
+}
+.ss-help:before, .ss-help.right:after {
+    content: "❓";
+}
+.ss-info:before, .ss-info.right:after {
+    content: "ℹ";
+}
+.ss-alert:before, .ss-alert.right:after {
+    content: "⚠";
+}
+.ss-caution:before, .ss-caution.right:after {
+    content: "⛔";
+}
+.ss-logout:before, .ss-logout.right:after {
+    content: "";
+}
+.ss-plus:before, .ss-plus.right:after {
+    content: "+";
+}
+.ss-hyphen:before, .ss-hyphen.right:after {
+    content: "-";
+}
+.ss-check:before, .ss-check.right:after {
+    content: "✓";
+}
+.ss-delete:before, .ss-delete.right:after {
+    content: "␡";
+}
+.ss-settings:before, .ss-settings.right:after {
+    content: "⚙";
+}
+.ss-dashboard:before, .ss-dashboard.right:after {
+    content: "";
+}
+.ss-notifications:before, .ss-notifications.right:after {
+    content: "🔔";
+}
+.ss-notificationsdisabled:before, .ss-notificationsdisabled.right:after {
+    content: "🔕";
+}
+.ss-clock:before, .ss-clock.right:after {
+    content: "⏲";
+}
+.ss-stopwatch:before, .ss-stopwatch.right:after {
+    content: "⏱";
+}
+.ss-calendar:before, .ss-calendar.right:after {
+    content: "📅";
+}
+.ss-addcalendar:before, .ss-addcalendar.right:after {
+    content: "";
+}
+.ss-removecalendar:before, .ss-removecalendar.right:after {
+    content: "";
+}
+.ss-checkcalendar:before, .ss-checkcalendar.right:after {
+    content: "";
+}
+.ss-deletecalendar:before, .ss-deletecalendar.right:after {
+    content: "";
+}
+.ss-briefcase:before, .ss-briefcase.right:after {
+    content: "💼";
+}
+.ss-cloud:before, .ss-cloud.right:after {
+    content: "☁";
+}
+.ss-droplet:before, .ss-droplet.right:after {
+    content: "💧";
+}
+.ss-up:before, .ss-up.right:after {
+    content: "⬆";
+}
+.ss-upright:before, .ss-upright.right:after {
+    content: "⬈";
+}
+.ss-right:before, .ss-right.right:after {
+    content: "➡";
+}
+.ss-downright:before, .ss-downright.right:after {
+    content: "⬊";
+}
+.ss-down:before, .ss-down.right:after {
+    content: "⬇";
+}
+.ss-downleft:before, .ss-downleft.right:after {
+    content: "⬋";
+}
+.ss-left:before, .ss-left.right:after {
+    content: "⬅";
+}
+.ss-upleft:before, .ss-upleft.right:after {
+    content: "⬉";
+}
+.ss-navigateup:before, .ss-navigateup.right:after {
+    content: "";
+}
+.ss-navigateright:before, .ss-navigateright.right:after {
+    content: "▻";
+}
+.ss-navigatedown:before, .ss-navigatedown.right:after {
+    content: "";
+}
+.ss-navigateleft:before, .ss-navigateleft.right:after {
+    content: "◅";
+}
+.ss-directup:before, .ss-directup.right:after {
+    content: "▴";
+}
+.ss-directright:before, .ss-directright.right:after {
+    content: "▹";
+}
+.ss-dropdown:before, .ss-dropdown.right:after {
+    content: "▾";
+}
+.ss-directleft:before, .ss-directleft.right:after {
+    content: "◃";
+}
+.ss-retweet:before, .ss-retweet.right:after {
+    content: "";
+}
+.ss-volumelow:before, .ss-volumelow.right:after {
+    content: "🔉";
+}
+.ss-volumehigh:before, .ss-volumehigh.right:after {
+    content: "🔊";
+}
+.ss-batteryhigh:before, .ss-batteryhigh.right:after {
+    content: "";
+}
+.ss-batterymedium:before, .ss-batterymedium.right:after {
+    content: "";
+}
+.ss-batterylow:before, .ss-batterylow.right:after {
+    content: "";
+}
+.ss-batteryempty:before, .ss-batteryempty.right:after {
+    content: "";
+}
+.ss-clouddownload:before, .ss-clouddownload.right:after {
+    content: "";
+}
+.ss-cloudupload:before, .ss-cloudupload.right:after {
+    content: "";
+}
+.ss-calendaradd:before, .ss-calendaradd.right:after {
+    content: "";
+}
+.ss-calendarremove:before, .ss-calendarremove.right:after {
+    content: "";
+}
+.ss-calendarcheck:before, .ss-calendarcheck.right:after {
+    content: "";
+}
+.ss-calendardelete:before, .ss-calendardelete.right:after {
+    content: "";
+}
+@font-face {
+    font-family: "ProximaNova";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/svn/fonts/proximanova-reg-webfont.ttf") format("truetype"), url("/svn/fonts/proximanova-reg-webfont.svg#ProximaNovaRegular") format("svg");
+}
+@font-face {
+    font-family: "ProximaNova";
+    font-style: italic;
+    font-weight: normal;
+    src: url("/svn/fonts/proximanova-regit-webfont.ttf") format("truetype"), url("/svn/fonts/proximanova-regit-webfont.svg#ProximaNovaRegularItalic") format("svg");
+}
+@font-face {
+    font-family: "ProximaNova";
+    font-style: normal;
+    font-weight: bold;
+    src: url("/svn/fonts/proximanova-bold-webfont.ttf") format("truetype"), url("/svn/fonts/proximanova-bold-webfont.svg#ProximaNovaBold") format("svg");
+}
+@font-face {
+    font-family: "ProximaNova";
+    font-style: italic;
+    font-weight: bold;
+    src: url("/svn/fonts/proximanova-boldit-webfont.ttf") format("truetype"), url("/svn/fonts/proximanova-boldit-webfont.svg#ProximaNovaBoldItalic") format("svg");
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+nav ul {
+    list-style: none outside none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none;
+}
+a {
+    background: none repeat scroll 0 0 transparent;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+ins {
+    background-color: #FFFF99;
+    color: #000000;
+    text-decoration: none;
+}
+mark {
+    background-color: #FFFF99;
+    color: #000000;
+    font-style: italic;
+    font-weight: 700;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #CCCCCC -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-right: 0 none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    display: block;
+    height: 1px;
+    margin: 1em 0;
+    padding: 0;
+}
+input, select {
+    vertical-align: middle;
+}
+section.login form {
+    margin-top: 20%;
+}
+section.login input[name="name"], section.login input[name="password"] {
+    border: 1px solid #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    clear: both;
+    float: left;
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1.25em;
+    margin: 0.25em 10%;
+    outline: medium none;
+    padding: 0.35em;
+    width: 80%;
+}
+section.login input[name="name"], section.login input[name="password"] {
+    margin: 0.25em 25%;
+    width: 48%;
+}
+section.login input[name="name"]:focus, section.login input[name="password"]:focus {
+    box-shadow: 0 0 6px #CCCCCC;
+}
+section.login input[type="submit"] {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-color: #CCCCCC;
+    border-image: none;
+    border-radius: 6px 6px 6px 6px;
+    border-style: solid;
+    border-width: 1px 1px 2px;
+    clear: both;
+    color: #666666;
+    float: left;
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1.25em;
+    margin: 2em 10% 0.35em;
+    padding: 0.25em;
+    width: 80%;
+}
+section.login input[type="submit"] {
+    margin: 2em 25% 0.35em;
+    padding: 0.25em;
+    width: 50%;
+}
+section.login input[type="submit"]:hover {
+    background: none repeat scroll 0 0 #00A264;
+    border-color: #016C43;
+    color: #FFFFFF;
+}
+section.all-posts {
+    padding: 0 0 5em;
+}
+section.all-posts table.posts {
+    font-family: "proxima-sans-pro";
+    font-size: 1em;
+    margin: 2em 10% 0;
+    width: 80%;
+}
+section.all-posts table.posts tr {
+    border-bottom: 1px solid #EEEEEE;
+    width: 100%;
+}
+section.all-posts table.posts td {
+    padding: 0.75em;
+}
+section.all-posts table.posts td.draft {
+    color: #CCCCCC;
+    font-style: italic;
+}
+section.all-posts table.posts td.draft a {
+    color: #999999;
+}
+section.all-posts table.posts td.author {
+    width: 100px;
+}
+section.all-posts table.posts td.date {
+    width: 60px;
+}
+section.all-posts table.posts {
+    margin: 2em auto 0;
+    width: 800px;
+}
+body.writing {
+    background: none repeat scroll 0 0 transparent;
+}
+body.writing > header {
+    margin-top: 1em;
+}
+body.writing > header h1 {
+    display: none;
+}
+body.writing > header p.day {
+    display: none;
+}
+body.writing div.content {
+    margin: 0;
+}
+body.writing div.editor {
+    width: 100%;
+}
+body.writing div.editor form {
+    width: 100%;
+}
+body.writing div.editor form:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+body.writing div.editor input[type="text"], body.writing div.editor textarea {
+    border: medium none;
+    clear: both;
+    color: #444444;
+    float: left;
+    font-family: "kepler-std",Georgia,Times,serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    height: auto;
+    line-height: 1.5em;
+    margin: 0.5em auto;
+    resize: none;
+}
+body.writing div.editor textarea {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+body.writing div.editor textarea {
+    margin-left: 110px;
+    width: 680px;
+}
+body.writing div.editor *:-moz-placeholder {
+    color: #CCCCCC;
+}
+body.writing div.editor input.title {
+    font-family: "acta-display",Georgia,Times,serif;
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+}
+body.writing div.editor input#photo_file {
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1.25em;
+    margin: 1em 33% 1em 37%;
+    width: 30%;
+}
+body.writing div.editor input[value="Save"] {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-color: #CCCCCC;
+    border-image: none;
+    border-radius: 6px 6px 6px 6px;
+    border-style: solid;
+    border-width: 1px 1px 2px;
+    clear: both;
+    color: #666666;
+    float: left;
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1.25em;
+    margin: 3em 25% 0.35em;
+    padding: 0.25em;
+    width: 50%;
+}
+body.writing div.editor input[value="Save"]:hover {
+    background: none repeat scroll 0 0 #00A264;
+    border-color: #016C43;
+    color: #FFFFFF;
+}
+body.writing div.editor textarea#article_body {
+    height: 300px;
+}
+body.writing div.editor textarea#article_extended {
+    height: 100px;
+}
+body.writing div.editor textarea#insight_body {
+    height: 200px;
+    text-align: center;
+}
+body.writing div.editor textarea#quote_body {
+    height: 200px;
+    text-align: center;
+}
+body.writing div.editor textarea.description {
+    height: 100px;
+    text-align: center;
+}
+body.writing div.editor textarea.embed-code {
+    font-family: Menlo,"Bitstream Vera Sans Mono",monaco,"Courier New",courier,monospace;
+    font-size: 1em;
+    height: 100px;
+    word-wrap: break-word;
+}
+body.writing div.editor input.link-url {
+    color: blue;
+    text-align: center;
+    width: 100%;
+}
+body.writing div.editor div.post-settings {
+    float: left;
+    margin: 10em 0 0;
+    text-align: center;
+    width: 100%;
+}
+body.writing div.editor div.post-settings div.post-settings-date, body.writing div.editor div.post-settings div.post-settings-status {
+    margin: 0 0 1em;
+    width: 100%;
+}
+body.writing div.editor p.submit {
+    float: left;
+    width: 100%;
+}
+body.writing div.editor p#post-types, body.writing div.editor section.compose {
+    margin: 1.75em auto 0;
+    width: 90%;
+}
+body.writing div.editor p#post-types:after, body.writing div.editor section.compose:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+body.writing div.editor p#post-types, body.writing div.editor section.compose {
+    width: 900px;
+}
+body.writing div.editor p.cancel {
+    float: left;
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    text-align: center;
+    width: 100%;
+}
+body.writing div.editor p.cancel a {
+    color: #999999;
+}
+body.writing div.editor p.post-options {
+    clear: both;
+    color: #999999;
+    float: left;
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1.25em;
+    margin: 3em 0 2em;
+    text-align: center;
+    width: 100%;
+}
+body.writing div.editor p.post-options a {
+    color: #529AE4;
+}
+body.writing div.editor aside.admin-upload {
+    clear: both;
+    float: left;
+    padding: 0 0 5em;
+    text-align: center;
+    width: 100%;
+}
+body.writing div.editor aside.admin-upload h4 {
+    color: #999999;
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+    margin: 1.5em auto 0.5em;
+}
+body.edit-profile div.container {
+    margin-top: 3em;
+}
+body.edit-profile aside.edit_avatar {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100px;
+}
+body.edit-profile aside.edit_avatar a {
+    color: #CCCCCC;
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    text-decoration: none;
+}
+body.edit-profile aside.edit_avatar a.cancel_upload {
+    display: inline-block;
+    margin: 6px 0 0 18px;
+}
+body.edit-profile aside.edit_avatar form {
+    margin: 20px 0 0;
+}
+body.edit-profile aside.edit_avatar form input[value="Upload"] {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-color: #CCCCCC;
+    border-image: none;
+    border-radius: 6px 6px 6px 6px;
+    border-style: solid;
+    border-width: 1px 1px 2px;
+    clear: both;
+    color: #666666;
+    float: left;
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 0.9em;
+    margin: 20px 0 0;
+    padding: 0.25em;
+    width: 100px;
+}
+body.edit-profile aside.edit_avatar form input[value="Upload"]:hover {
+    background: none repeat scroll 0 0 #00A264;
+    border-color: #016C43;
+    color: #FFFFFF;
+}
+body.edit-profile aside.edit_avatar img {
+    border-radius: 100px 100px 100px 100px;
+    margin-bottom: 10px;
+}
+body.edit-profile form.edit_author {
+    margin-left: 160px;
+    width: 100%;
+}
+body.edit-profile form.edit_author span {
+    clear: right;
+    float: left;
+    width: 100%;
+}
+body.edit-profile form.edit_author span:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+body.edit-profile form.edit_author label {
+    color: #BBBBBB;
+    display: block;
+    float: left;
+    font-size: 1.25em;
+    font-weight: 300;
+    margin-right: 0.2em;
+    padding-top: 0.46em;
+}
+body.edit-profile form.edit_author input#author_name, body.edit-profile form.edit_author input#author_location, body.edit-profile form.edit_author input#author_twitter, body.edit-profile form.edit_author input#author_slug, body.edit-profile form.edit_author select#author_status {
+    clear: right;
+    display: block;
+    float: left;
+    margin: 0 0 10px;
+}
+body.edit-profile form.edit_author select#author_status {
+    margin: 10px 0 20px 5px;
+}
+body.edit-profile form.edit_author textarea {
+    height: 120px;
+    margin: 30px 0 0;
+}
+body.edit-profile form.edit_author p.submit {
+    clear: left;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+body.edit-profile form.edit_author p.submit input {
+    margin: 0;
+    width: 100%;
+}
+body.edit-profile form.edit_author p.cancel {
+    float: left;
+    margin-top: 12px;
+    width: 90px;
+}
+body.edit-profile form.edit_author p.cancel a {
+    text-decoration: none;
+}
+body {
+    color: #333333;
+    font-family: "kepler-std",Georgia,Times,serif;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+body a {
+    color: #477B96;
+    text-decoration: underline;
+}
+body a:hover {
+    text-decoration: none;
+}
+body div.container {
+    margin: 0 auto;
+    max-width: 960px;
+    position: relative;
+    width: 80%;
+}
+body div.container:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+body div.content {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+body div.pagination {
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1.25em;
+    margin: 0 0 1em;
+}
+body div.pagination:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+body div.pagination p.older_posts {
+    float: left;
+}
+body div.pagination p.newer_posts {
+    float: right;
+}
+body div.pagination a {
+    text-decoration: none;
+}
+body div.pagination a:hover {
+    text-decoration: underline;
+}
+body input[type="text"]:focus, body input[type="submit"]:focus, body textarea:focus {
+    outline: medium none;
+}
+body input[type="submit"] {
+    cursor: pointer;
+}
+body.missing header {
+    text-align: center;
+}
+body.missing header h1 {
+    color: #444444;
+    font-family: "acta-display",Georgia,Times,serif;
+    font-size: 1.75em;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 1.25em;
+    margin: 0 auto 0.5em;
+}
+body.missing header h1 {
+    font-size: 2.813em;
+}
+body.missing header h1 em, body.missing header h1 em a {
+    color: #CCCCCC;
+    font-style: normal;
+}
+body.missing header h1 a {
+    color: #444444;
+    text-decoration: none;
+    transition: all 0.2s ease 0s;
+}
+body.missing header h1 a:hover {
+    color: #5F6879;
+}
+header.masthead {
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    z-index: 37;
+}
+header.masthead:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+header.masthead h1 {
+    font-weight: normal;
+    margin: 0.75em auto;
+}
+header.masthead h1.home {
+    color: #777777;
+    line-height: 1.25em;
+    padding: 0.25em 0 0 1em;
+    position: absolute;
+    text-align: left;
+}
+header.masthead h1.home span.small, header.masthead h1.home span.medium, header.masthead h1.home span.large {
+    display: none;
+}
+header.masthead h1.home span.small {
+    display: inline;
+}
+header.masthead h1.home {
+    position: relative;
+    text-align: left;
+}
+header.masthead h1.home span.medium {
+    display: inline;
+}
+header.masthead h1.home {
+    text-align: center;
+}
+header.masthead h1.home span.large {
+    display: inline;
+}
+header.masthead > p.day {
+    color: #777777;
+    display: none;
+    left: 1.5em;
+    position: absolute;
+    top: 0.35em;
+}
+header.masthead > p.day {
+    display: inline;
+}
+header.masthead > p.us a {
+    background: url("/svn/static/images/logo-37signals.svg") no-repeat scroll 0 0 / 100px 24px transparent;
+    height: 0;
+    opacity: 0.6;
+    overflow: hidden;
+    padding: 24px 0 0;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    width: 100px;
+}
+header.masthead > p.us a:hover {
+    opacity: 1;
+}
+header.masthead > p.us a {
+    right: 1em;
+    top: 0.2em;
+}
+header.masthead > ul {
+    position: absolute;
+    right: 7em;
+    top: 1em;
+}
+header.masthead > ul {
+    right: 7em;
+    top: 0.2em;
+}
+header.masthead > ul > li {
+    float: left;
+    list-style: none outside none;
+    padding: 0 0.25em;
+}
+header.masthead > ul > li.admin {
+    margin-top: 0.35em;
+}
+header.masthead > ul > li.profile {
+    display: none;
+}
+header.masthead > ul > li.profile {
+    display: inline;
+}
+header.masthead > ul > li.posts {
+    display: none;
+}
+header.masthead > ul > li.posts {
+    display: inline;
+}
+header.masthead > ul > li.logout {
+    margin-right: 0.75em;
+}
+header.masthead > ul li.write {
+    position: relative;
+}
+header.masthead > ul li.write:hover ul.post-types {
+    display: block;
+}
+header.masthead > ul li.write ul.post-types {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    display: none;
+    font-size: 1.25em;
+    left: -2.5em;
+    list-style: none outside none;
+    padding: 1em 1em 0.5em;
+    position: absolute;
+    top: 1.5em;
+    transition: all 0.2s ease 0s;
+    z-index: 10;
+}
+header.masthead > ul li.write ul.post-types:before {
+    background-color: #FFFFFF;
+    box-shadow: -3px -3px 6px -3px rgba(0, 0, 0, 0.4);
+    content: " ";
+    display: block;
+    height: 20px;
+    left: 50px;
+    position: absolute;
+    top: -6px;
+    transform: rotate(45deg);
+    width: 20px;
+    z-index: -10;
+}
+header.masthead > ul li.write ul.post-types li {
+    border-bottom: 1px dashed #CCCCCC;
+    display: block;
+    float: none;
+    margin: 0 0 0.5em;
+    padding-bottom: 0.5em;
+}
+header.masthead > ul li.write ul.post-types li:last-child {
+    border: medium none;
+    padding: 0;
+}
+header.masthead > ul li.write ul.post-types li a {
+    color: #477B96;
+    text-decoration: none;
+}
+header.masthead > ul li.write ul.post-types li a:hover {
+    color: #2D5668;
+    text-decoration: underline;
+}
+header.masthead > ul a {
+    color: #CCCCCC;
+    padding: 0.5em 0 0.3em;
+    transition: all 0.2s ease 0s;
+}
+header.masthead > ul a:hover {
+    color: #666666;
+}
+body div.content article {
+    margin: 4em auto 2em;
+}
+body div.content article header.post-header {
+    text-align: center;
+}
+body div.content article header.post-header h1 {
+    color: #444444;
+    font-family: "acta-display",Georgia,Times,serif;
+    font-size: 1.75em;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 1.25em;
+    margin: 0 auto 0.5em;
+}
+body div.content article header.post-header h1 {
+    font-size: 2.813em;
+}
+body div.content article header.post-header h1 em, body div.content article header.post-header h1 em a {
+    color: #CCCCCC;
+    font-style: normal;
+}
+body div.content article header.post-header h1 a {
+    color: #444444;
+    text-decoration: none;
+    transition: all 0.2s ease 0s;
+}
+body div.content article header.post-header h1 a:hover {
+    color: #477B96;
+    text-decoration: underline;
+}
+body div.content article header.post-header h2 {
+    color: #999999;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 300;
+    margin: 1.5em auto 1em;
+}
+body div.content article header.post-header h2 span.star, body div.content article header.post-header h2 span.admin-edit {
+    font-size: 0.8em;
+    margin: 0 0.2em;
+}
+body div.content article header.post-header h2 span.star a, body div.content article header.post-header h2 span.admin-edit a {
+    color: #999999;
+}
+body div.content article header.post-header h2 span.star a:hover, body div.content article header.post-header h2 span.admin-edit a:hover {
+    text-decoration: none;
+}
+body div.content article header.post-header h2 span.starred a {
+    color: #FFDD00;
+}
+body div.content article header.post-header h2 span.starred a:hover {
+    text-decoration: none;
+}
+body div.content article header.post-header h2 {
+    font-size: 1.25em;
+    margin: 0 auto 1em;
+}
+body div.content article div.post-content {
+    margin: 2.25em auto 2em;
+}
+body div.content article div.post-content > a {
+    font-size: 1.25em;
+    font-style: italic;
+}
+body div.content article div.post-content > a.continued {
+    display: block;
+}
+body div.content article div.post-content > a.continued {
+    margin: 2em auto;
+    width: 660px;
+}
+body div.content article div.post-content h2 {
+    font-size: 1.4em;
+    font-weight: 300;
+    line-height: 1.25em;
+    margin: 1em auto 0.5em;
+}
+body div.content article div.post-content h2 {
+    font-size: 1.75em;
+    line-height: 1.3em;
+}
+body div.content article div.post-content h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.25em;
+    margin: 1em auto 0.5em;
+}
+body div.content article div.post-content h3 {
+    font-size: 1.4em;
+    line-height: 1.3em;
+    margin-bottom: 0.2em;
+}
+body div.content article div.post-content blockquote, body div.content article div.post-content h2, body div.content article div.post-content h3, body div.content article div.post-content h4, body div.content article div.post-content h5, body div.content article div.post-content h6, body div.content article div.post-content p, body div.content article div.post-content figcaption {
+    width: 100%;
+}
+body div.content article div.post-content blockquote, body div.content article div.post-content h2, body div.content article div.post-content h3, body div.content article div.post-content h4, body div.content article div.post-content h5, body div.content article div.post-content h6, body div.content article div.post-content p, body div.content article div.post-content figcaption {
+    width: 660px;
+}
+body div.content article div.post-content p {
+    font-size: 1.15em;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin: 0 auto;
+}
+body div.content article div.post-content p {
+    font-size: 1.35em;
+    line-height: 1.6em;
+}
+body div.content article div.post-content p br {
+    content: "";
+    display: block;
+    font-size: 1em;
+    height: 1px;
+    line-height: 0;
+    margin: 0.7em auto 0;
+    padding: 0;
+}
+body div.content article div.post-content p i {
+    font-weight: 300;
+}
+body div.content article div.post-content p + p {
+    text-indent: 1em;
+}
+body div.content article div.post-content p + p {
+    text-indent: 2em;
+}
+body div.content article div.post-content blockquote {
+    border-bottom: 3px double #DDDDDD;
+    border-top: 3px double #DDDDDD;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.35em;
+    margin: 1.5em auto;
+    padding: 1em 0;
+    text-align: center;
+}
+body div.content article div.post-content figcaption {
+    color: #999999;
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 0.5em auto 1em;
+}
+body div.content article div.post-content figure, body div.content article div.post-content iframe, body div.content article div.post-content object, body div.content article div.post-content embed {
+    display: block;
+    margin: 1em auto;
+    width: 100%;
+}
+body div.content article div.post-content figure, body div.content article div.post-content iframe, body div.content article div.post-content object, body div.content article div.post-content embed {
+    margin: 1em auto;
+    width: 660px;
+}
+body div.content article div.post-content figure {
+    cursor: pointer;
+}
+body div.content article div.post-content figure.zoomed {
+    width: 100%;
+}
+body div.content article div.post-content figure.zoomed figcaption {
+    margin: 0 auto;
+    width: 660px;
+}
+body div.content article div.post-content figure.zoomed img {
+    display: block;
+    margin: 1em auto;
+    max-width: 100%;
+}
+body div.content article div.post-content img {
+    height: auto;
+    margin: 1.25em auto;
+    max-width: 100%;
+}
+body div.content article div.post-content img[align="left"] {
+    margin-right: 5%;
+}
+body div.content article div.post-content img[align="right"] {
+    float: right;
+    margin-left: 5%;
+    margin-right: 0;
+}
+body div.content article div.post-content img.clear {
+    clear: both;
+}
+body div.content article div.post-content img {
+    margin: 1.25em auto;
+    max-width: 660px;
+}
+body div.content article div.post-content small {
+    color: #777777;
+    font-size: 0.8em;
+    font-style: italic;
+}
+body div.content article div.post-content ol, body div.content article div.post-content ul {
+    font-size: 1.15em;
+    font-weight: 300;
+    line-height: 1.5em;
+    padding: 0 5%;
+}
+body div.content article div.post-content ol li, body div.content article div.post-content ul li {
+    margin: 1em auto;
+}
+body div.content article div.post-content ol.short_points li, body div.content article div.post-content ul.short_points li {
+    line-height: 1em;
+}
+body div.content article div.post-content ol, body div.content article div.post-content ul {
+    font-size: 1.35em;
+    line-height: 1.65em;
+    margin: 0 auto;
+    width: 600px;
+}
+body div.content article div.post-content table {
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    line-height: 1.25em;
+    margin: 1.5em auto;
+    width: 100%;
+}
+body div.content article div.post-content table {
+    font-size: 1.15em;
+    width: 660px;
+}
+body div.content article div.post-content table th {
+    border-left: 1px solid #DDDDDD;
+    font-size: 0.9em;
+    font-weight: bold;
+    line-height: 1.25em;
+    padding: 0.75em;
+    text-align: left;
+}
+body div.content article div.post-content table th:first-child {
+    border-left: medium none;
+    padding-left: 0;
+}
+body div.content article div.post-content table tr {
+    border-bottom: 1px solid #DDDDDD;
+}
+body div.content article div.post-content table tr:last-child {
+    border-bottom: medium none;
+}
+body div.content article div.post-content table td {
+    border-left: 1px solid #DDDDDD;
+    padding: 0.75em;
+}
+body div.content article div.post-content table td:first-child {
+    border-left: medium none;
+    padding-left: 0;
+}
+body.home header h1.waveform {
+    padding-top: 1.5em;
+    transition: all 0.2s ease 0s;
+}
+body.home header h1.waveform {
+    padding-top: 1.25em;
+}
+body.home header h1.Design {
+    background: url("/svn/static/images/waveforms/design.png") no-repeat scroll center 0 / 182px auto transparent;
+}
+body.home header h1.Design {
+    background-size: 260px auto;
+}
+body.home header h1.Design {
+    background-image: url("/svn/static/images/waveforms/design@2x.png");
+}
+body.home header h1.Writing {
+    background: url("/svn/static/images/waveforms/writing.png") no-repeat scroll center 0 / 182px auto transparent;
+}
+body.home header h1.Writing {
+    background-size: 260px auto;
+}
+body.home header h1.Writing {
+    background-image: url("/svn/static/images/waveforms/writing@2x.png");
+}
+body.home header h1.Business {
+    background: url("/svn/static/images/waveforms/business.png") no-repeat scroll center 0 / 182px auto transparent;
+}
+body.home header h1.Business {
+    background-size: 260px auto;
+}
+body.home header h1.Business {
+    background-image: url("/svn/static/images/waveforms/business@2x.png");
+}
+body.home header h1.Support {
+    background: url("/svn/static/images/waveforms/support.png") no-repeat scroll center 0 / 182px auto transparent;
+}
+body.home header h1.Support {
+    background-size: 260px auto;
+}
+body.home header h1.Support {
+    background-image: url("/svn/static/images/waveforms/support@2x.png");
+}
+body.home header h1.Sysadmin {
+    background: url("/svn/static/images/waveforms/sysops.png") no-repeat scroll center 0 / 182px auto transparent;
+}
+body.home header h1.Sysadmin {
+    background-size: 260px auto;
+}
+body.home header h1.Sysadmin {
+    background-image: url("/svn/static/images/waveforms/sysops@2x.png");
+}
+body.home header h1.Programming {
+    background: url("/svn/static/images/waveforms/programming.png") no-repeat scroll center 0 / 182px auto transparent;
+}
+body.home header h1.Programming {
+    background-size: 260px auto;
+}
+body.home header h1.Programming {
+    background-image: url("/svn/static/images/waveforms/programming@2x.png");
+}
+body.home header h1.Noise {
+    background: url("/svn/static/images/waveforms/all.png") no-repeat scroll center 0 / 182px auto transparent;
+}
+body.home header h1.Noise {
+    background-size: 260px auto;
+}
+body.home header h1.Noise {
+    background-image: url("/svn/static/images/waveforms/all@2x.png");
+}
+body div.popular h2.waveform {
+    padding-top: 3em;
+    transition: all 0.2s ease 0s;
+}
+body div.popular h2.waveform {
+    padding-top: 4em;
+}
+body div.popular h2.Design {
+    background: url("/svn/static/images/waveforms/design.png") no-repeat scroll center 0 / 200px auto transparent;
+}
+body div.popular h2.Design {
+    background-size: 300px auto;
+}
+body div.popular h2.Design {
+    background-image: url("/svn/static/images/waveforms/design@2x.png");
+}
+body div.popular h2.Programming {
+    background: url("/svn/static/images/waveforms/programming.png") no-repeat scroll center 0 / 200px auto transparent;
+}
+body div.popular h2.Programming {
+    background-size: 300px auto;
+}
+body div.popular h2.Programming {
+    background-image: url("/svn/static/images/waveforms/programming@2x.png");
+}
+body div.popular h2.Writing {
+    background: url("/svn/static/images/waveforms/writing.png") no-repeat scroll center 0 / 200px auto transparent;
+}
+body div.popular h2.Writing {
+    background-size: 300px auto;
+}
+body div.popular h2.Writing {
+    background-image: url("/svn/static/images/waveforms/writing@2x.png");
+}
+body div.popular h2.Business {
+    background: url("/svn/static/images/waveforms/business.png") no-repeat scroll center 0 / 200px auto transparent;
+}
+body div.popular h2.Business {
+    background-size: 300px auto;
+}
+body div.popular h2.Business {
+    background-image: url("/svn/static/images/waveforms/business@2x.png");
+}
+body div.popular h2.Support {
+    background: url("/svn/static/images/waveforms/support.png") no-repeat scroll center 0 / 200px auto transparent;
+}
+body div.popular h2.Support {
+    background-size: 300px auto;
+}
+body div.popular h2.Support {
+    background-image: url("/svn/static/images/waveforms/support@2x.png");
+}
+body div.popular h2.Sysadmin {
+    background: url("/svn/static/images/waveforms/sysops.png") no-repeat scroll center 0 / 200px auto transparent;
+}
+body div.popular h2.Sysadmin {
+    background-size: 300px auto;
+}
+body div.popular h2.Sysadmin {
+    background-image: url("/svn/static/images/waveforms/sysops@2x.png");
+}
+body div.popular h2.General {
+    background: url("/svn/static/images/waveforms/all.png") no-repeat scroll center 0 / 200px auto transparent;
+}
+body div.popular h2.General {
+    background-size: 300px auto;
+}
+body div.popular h2.General {
+    background-image: url("/svn/static/images/waveforms/all@2x.png");
+}
+body.perma header h1.waveform {
+    padding-top: 2em;
+    transition: all 0.2s ease 0s;
+}
+body.perma header h1.waveform {
+    padding-top: 2.25em;
+}
+body.perma header h1.Business {
+    background: url("/svn/static/images/waveforms/business.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body.perma header h1.Business {
+    background-size: 520px auto;
+}
+body.perma header h1.Business {
+    background-image: url("/svn/static/images/waveforms/business@2x.png");
+}
+body.perma header h1.Design {
+    background: url("/svn/static/images/waveforms/design.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body.perma header h1.Design {
+    background-size: 520px auto;
+}
+body.perma header h1.Design {
+    background-image: url("/svn/static/images/waveforms/design@2x.png");
+}
+body.perma header h1.Writing {
+    background: url("/svn/static/images/waveforms/writing.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body.perma header h1.Writing {
+    background-size: 520px auto;
+}
+body.perma header h1.Writing {
+    background-image: url("/svn/static/images/waveforms/writing@2x.png");
+}
+body.perma header h1.Support {
+    background: url("/svn/static/images/waveforms/support.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body.perma header h1.Support {
+    background-size: 520px auto;
+}
+body.perma header h1.Support {
+    background-image: url("/svn/static/images/waveforms/support@2x.png");
+}
+body.perma header h1.Sysadmin {
+    background: url("/svn/static/images/waveforms/sysops.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body.perma header h1.Sysadmin {
+    background-size: 520px auto;
+}
+body.perma header h1.Sysadmin {
+    background-image: url("/svn/static/images/waveforms/sysops@2x.png");
+}
+body.perma header h1.Programming {
+    background: url("/svn/static/images/waveforms/programming.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body.perma header h1.Programming {
+    background-size: 520px auto;
+}
+body.perma header h1.Programming {
+    background-image: url("/svn/static/images/waveforms/programming@2x.png");
+}
+body.perma header h1.Noise {
+    background: url("/svn/static/images/waveforms/all.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body.perma header h1.Noise {
+    background-size: 520px auto;
+}
+body.perma header h1.Noise {
+    background-image: url("/svn/static/images/waveforms/all@2x.png");
+}
+body article.tumble.waveform {
+    padding-top: 4em;
+    transition: all 0.2s ease 0s;
+}
+body article.tumble.waveform {
+    padding-top: 4.25em;
+}
+body article.tumble.Business {
+    background: url("/svn/static/images/waveforms/business.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body article.tumble.Business {
+    background-size: 390px auto;
+}
+body article.tumble.Business {
+    background-image: url("/svn/static/images/waveforms/business@2x.png");
+}
+body article.tumble.Design {
+    background: url("/svn/static/images/waveforms/design.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body article.tumble.Design {
+    background-size: 390px auto;
+}
+body article.tumble.Design {
+    background-image: url("/svn/static/images/waveforms/design@2x.png");
+}
+body article.tumble.Writing {
+    background: url("/svn/static/images/waveforms/writing.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body article.tumble.Writing {
+    background-size: 390px auto;
+}
+body article.tumble.Writing {
+    background-image: url("/svn/static/images/waveforms/writing@2x.png");
+}
+body article.tumble.Support {
+    background: url("/svn/static/images/waveforms/support.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body article.tumble.Support {
+    background-size: 390px auto;
+}
+body article.tumble.Support {
+    background-image: url("/svn/static/images/waveforms/support@2x.png");
+}
+body article.tumble.Sysadmin {
+    background: url("/svn/static/images/waveforms/sysops.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body article.tumble.Sysadmin {
+    background-size: 390px auto;
+}
+body article.tumble.Sysadmin {
+    background-image: url("/svn/static/images/waveforms/sysops@2x.png");
+}
+body article.tumble.Programming {
+    background: url("/svn/static/images/waveforms/programming.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body article.tumble.Programming {
+    background-size: 390px auto;
+}
+body article.tumble.Programming {
+    background-image: url("/svn/static/images/waveforms/programming@2x.png");
+}
+body article.tumble.Noise {
+    background: url("/svn/static/images/waveforms/all.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body article.tumble.Noise {
+    background-size: 390px auto;
+}
+body article.tumble.Noise {
+    background-image: url("/svn/static/images/waveforms/all@2x.png");
+}
+body.category section.category header h1.waveform {
+    padding-top: 2em;
+    transition: all 0.2s ease 0s;
+}
+body.category section.category header h1.waveform {
+    padding-top: 2.25em;
+}
+body.category section.category header h1.Business {
+    background: url("/svn/static/images/waveforms/business.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body.category section.category header h1.Business {
+    background-size: 520px auto;
+}
+body.category section.category header h1.Business {
+    background-image: url("/svn/static/images/waveforms/business@2x.png");
+}
+body.category section.category header h1.Design {
+    background: url("/svn/static/images/waveforms/design.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body.category section.category header h1.Design {
+    background-size: 520px auto;
+}
+body.category section.category header h1.Design {
+    background-image: url("/svn/static/images/waveforms/design@2x.png");
+}
+body.category section.category header h1.Writing {
+    background: url("/svn/static/images/waveforms/writing.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body.category section.category header h1.Writing {
+    background-size: 520px auto;
+}
+body.category section.category header h1.Writing {
+    background-image: url("/svn/static/images/waveforms/writing@2x.png");
+}
+body.category section.category header h1.Support {
+    background: url("/svn/static/images/waveforms/support.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body.category section.category header h1.Support {
+    background-size: 520px auto;
+}
+body.category section.category header h1.Support {
+    background-image: url("/svn/static/images/waveforms/support@2x.png");
+}
+body.category section.category header h1.Sysadmin {
+    background: url("/svn/static/images/waveforms/sysops.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body.category section.category header h1.Sysadmin {
+    background-size: 520px auto;
+}
+body.category section.category header h1.Sysadmin {
+    background-image: url("/svn/static/images/waveforms/sysops@2x.png");
+}
+body.category section.category header h1.Programming {
+    background: url("/svn/static/images/waveforms/programming.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body.category section.category header h1.Programming {
+    background-size: 520px auto;
+}
+body.category section.category header h1.Programming {
+    background-image: url("/svn/static/images/waveforms/programming@2x.png");
+}
+body.everything header.waveform {
+    padding-top: 3.25em;
+    transition: all 0.2s ease 0s;
+}
+body.everything header.waveform {
+    padding-top: 6.25em;
+}
+body.everything header.all {
+    background: url("/svn/static/images/waveforms/all.png") no-repeat scroll center 0 / 260px auto transparent;
+}
+body.everything header.all {
+    background-size: 520px auto;
+}
+body.everything header.all {
+    background-image: url("/svn/static/images/waveforms/all@2x.png");
+}
+body.home div.content {
+    padding-top: 2em;
+}
+body.home div.content article.post, body.home div.content article.tumble {
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 3em;
+    margin-top: 2.5em;
+    padding-bottom: 4em;
+}
+body.home div.content article.post:last-child, body.home div.content article.tumble:last-child {
+    border-bottom: medium none;
+    padding: 0;
+}
+body.home div.content article.tumble {
+    padding-top: 4em;
+}
+body.home div.content article.tumble:first-child {
+    margin-top: 2em;
+}
+body.home div.content div.home_ad {
+    border-bottom: 1px solid #DDDDDD;
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    line-height: 1.2em;
+    padding-bottom: 3em;
+    text-align: center;
+    width: 100%;
+}
+body.home div.content div.home_ad hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #CCCCCC -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-right: medium none;
+    border-style: dashed none none;
+    border-width: 1px medium medium;
+    margin: 0.75em auto;
+    width: 25%;
+}
+body.home div.content div.home_ad small {
+    color: #999999;
+    font-size: 0.8em;
+    font-style: normal;
+}
+body.home div.content div.home_ad.the_deck p {
+    margin: 1em auto 0.5em;
+}
+body.home div.content div.home_ad.jobs div.job a {
+    background: url("/svn/static/images/job_board.png") no-repeat scroll center 5px / 240px 97px transparent;
+    display: block;
+    margin-top: -3.4em;
+    padding-top: 110px;
+    width: 100%;
+}
+body.home div.content div.home_ad.jobs div.job a {
+    background-image: url("/svn/static/images/job_board.png");
+    background-size: 240px 97px;
+}
+body.home div.content div.home_ad.basecamp h3 a {
+    background: url("/svn/static/images/basecamp.png") no-repeat scroll center 5px / 212px 58px transparent;
+    color: #333333;
+    display: block;
+    height: 0;
+    margin-bottom: 1em;
+    overflow: hidden;
+    padding-top: 70px;
+    width: 100%;
+}
+body.home div.content {
+    padding-top: 0;
+}
+body.home div.content article {
+    padding-top: 1.5em;
+}
+body.home div.content div.home_ad {
+    font-size: 1.25em;
+    line-height: 1.2em;
+    margin: 1em auto;
+}
+body.home div.content div.home_ad.the_deck hr {
+    width: 100px;
+}
+body.home div.content div.home_ad.the_deck p {
+    width: 400px;
+}
+body.home div.content div.home_ad.jobs {
+    padding-bottom: 2em;
+}
+body.home div.content div.home_ad.jobs div.job a {
+    background-size: 462px 186px;
+    margin-top: -2.8em;
+    padding-top: 200px;
+}
+body.home div.content div.home_ad.basecamp p {
+    margin: 0 auto;
+    width: 550px;
+}
+body.home div.content div.home_ad.jobs div.job a {
+    background-image: url("/svn/static/images/job_board.png");
+    background-size: 462px 186px;
+}
+div.content div.container article.post blockquote {
+    color: #444444;
+    font-size: 1.5em;
+}
+div.content div.container article.post p span.note {
+    background: none repeat scroll 0 0 #FCF6E3;
+    border: 1px solid #EDE3C8 !important;
+    display: block;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    padding: 2.5%;
+    text-indent: 0;
+}
+div.content div.container article.post blockquote.longform {
+    color: #555555;
+    font-size: 1.2em;
+    font-style: normal;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 90%;
+}
+div.content div.container article.post blockquote.longform {
+    font-size: 1.35em;
+    width: 580px;
+}
+div.content div.container article.post blockquote.longform p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+div.content div.container article.post blockquote.longform p {
+    font-size: 1em;
+    margin-bottom: 0.75em;
+    width: 100%;
+}
+div.content div.container article.post blockquote.longform p + p {
+    text-indent: 0;
+}
+div.content div.container article.tumble {
+    margin: 4em auto 3.5em;
+}
+div.content div.container article.tumble {
+    margin-top: 0;
+}
+div.content div.container article.tumble figure, div.content div.container article.tumble iframe, div.content div.container article.tumble object, div.content div.container article.tumble embed {
+    display: block;
+    margin: 1em auto;
+    width: 100%;
+}
+div.content div.container article.tumble figure, div.content div.container article.tumble iframe, div.content div.container article.tumble object, div.content div.container article.tumble embed {
+    margin: 1.25em auto;
+    width: 660px;
+}
+div.content div.container article.tumble div.quote blockquote {
+    background: url("/svn/static/images/tumbles/quotes.png") no-repeat scroll 0 0 / 14px 10px transparent;
+    border: medium none;
+    font-size: 1.25em;
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+    margin-left: -10px;
+    padding: 0 20px;
+    width: 95%;
+}
+div.content div.container article.tumble div.quote blockquote p {
+    font-size: 1em;
+    font-style: normal;
+    line-height: 1.25em;
+    margin: 0;
+    text-align: left;
+}
+div.content div.container article.tumble div.quote blockquote {
+    background-size: 28px 20px;
+    font-size: 1.75em;
+    line-height: 1.3em;
+    margin: 0 auto 0.5em;
+    padding: 0 0 0 40px;
+}
+div.content div.container article.tumble div.quote blockquote p {
+    line-height: 1.35em;
+    width: 100%;
+}
+div.content div.container article.tumble div.quote blockquote {
+    width: 620px;
+}
+div.content div.container article.tumble div.quote div.source {
+    color: #888888;
+    font-size: 1.15em;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.25em;
+    margin: 0 auto 1em;
+    padding-left: 10px;
+    width: 95%;
+}
+div.content div.container article.tumble div.quote div.source i {
+    color: #CCCCCC;
+}
+div.content div.container article.tumble div.quote div.source {
+    font-size: 1.25em;
+    line-height: 1.45em;
+}
+div.content div.container article.tumble div.quote div.source {
+    padding-left: 40px;
+    width: 620px;
+}
+div.content div.container article.tumble div.quote div.tumble-details {
+    padding-left: 10px;
+    width: 95%;
+}
+div.content div.container article.tumble div.quote div.tumble-details {
+    padding-left: 40px;
+    width: 620px;
+}
+div.content div.container article.tumble div.photo figure img {
+    display: block;
+    margin: 1em auto;
+}
+div.content div.container article.tumble div.tumble-details {
+    color: #555555;
+    font-size: 1em;
+    line-height: 1.2em;
+    margin: 0.5em auto 0;
+}
+div.content div.container article.tumble div.tumble-details span.author, div.content div.container article.tumble div.tumble-details span.date, div.content div.container article.tumble div.tumble-details span.comment_activity a {
+    font-size: 0.85em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+div.content div.container article.tumble div.tumble-details span.date a {
+    color: #555555;
+    text-decoration: none;
+}
+div.content div.container article.tumble div.tumble-details span.star, div.content div.container article.tumble div.tumble-details span.admin-edit {
+    font-size: 0.8em;
+    margin: 0 0.2em;
+}
+div.content div.container article.tumble div.tumble-details span.star a, div.content div.container article.tumble div.tumble-details span.admin-edit a {
+    color: #999999;
+}
+div.content div.container article.tumble div.tumble-details span.starred a {
+    color: #FFDD00;
+}
+div.content div.container article.tumble div.tumble-details i {
+    color: #CCCCCC;
+}
+div.content div.container article.tumble div.tumble-details {
+    font-size: 1.2em;
+    width: 660px;
+}
+section.category, section.popular {
+    margin: 1em auto 2em;
+}
+section.category header, section.popular header {
+    margin: 0 auto 2em;
+    text-align: center;
+    width: 100%;
+}
+section.category header h1, section.popular header h1 {
+    color: #444444;
+    font-family: "acta-display",Georgia,Times,serif;
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 1.15em;
+    margin: 2em auto 0.25em;
+}
+section.category header h1, section.popular header h1 {
+    font-size: 2.813em;
+    margin-top: 0;
+}
+section.category header h2, section.popular header h2 {
+    border: medium none;
+    color: #999999;
+    font-size: 1.5em;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 1.2em;
+    margin: 0 auto 1em;
+    text-transform: none;
+}
+section.category header h2, section.popular header h2 {
+    width: 100%;
+}
+section.category h2, section.popular h2 {
+    border-bottom: 2px solid #CCCCCC;
+    color: #555555;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1.65em;
+    margin: 0 auto 2em;
+    padding: 0 0 0.75em;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+section.category h2, section.popular h2 {
+    margin: 0 auto;
+    width: 660px;
+}
+section.category div.popular, section.popular div.popular {
+    margin: 0 auto 4em;
+    width: 100%;
+}
+section.category div.popular, section.popular div.popular {
+    width: 660px;
+}
+section.category div.popular ul, section.popular div.popular ul {
+    font-size: 1.35em;
+    line-height: 1.2em;
+    list-style: none outside none;
+    margin: 1.25em auto;
+}
+section.category div.popular ul li, section.popular div.popular ul li {
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    margin: 0 0 0.75em 1.5em;
+    text-indent: -1.45em;
+    width: 95%;
+}
+section.category div.popular ul i, section.popular div.popular ul i {
+    color: #FBB829;
+    font-size: 0.8em;
+    margin: 0 0.5em 0 0;
+}
+section.category div.popular ul a:link, section.popular div.popular ul a:link {
+    text-decoration: none;
+}
+section.category div.popular ul a:visited, section.popular div.popular ul a:visited {
+    color: #BFC7CB;
+}
+section.category div.popular ul a:hover, section.popular div.popular ul a:hover {
+    color: #477B96;
+    text-decoration: underline;
+}
+section.category div.popular p, section.popular div.popular p {
+    font-size: 1.2em;
+    margin: 0 0 0 1.75em;
+}
+section.author-bio {
+    border-bottom: 2px solid #CCCCCC;
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1.15em;
+    margin: 1em 0;
+    padding: 0.5em 0 1.5em;
+    width: 100%;
+}
+section.author-bio figure {
+    height: 110px;
+    margin: 0 auto;
+    text-align: center;
+    width: 110px;
+}
+section.author-bio figure img {
+    border-radius: 55px 55px 55px 55px;
+    display: block;
+    height: auto;
+    width: 100%;
+}
+section.author-bio figcaption {
+    line-height: 1.5em;
+    text-align: center;
+    width: 100%;
+}
+section.author-bio figcaption h2 {
+    color: #333333;
+    margin: 0 0 0.5em;
+}
+section.author-bio {
+    font-size: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 660px;
+}
+section.author-bio:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+section.author-bio figure {
+    float: left;
+    margin: 0 30px 0 -30px;
+    width: 110px;
+}
+section.author-bio figcaption {
+    float: left;
+    line-height: 1.35em;
+    text-align: left;
+    width: 550px;
+}
+section.author-bio figcaption p {
+    margin: 0 0 1em;
+}
+section.author-bio figcaption p:last-child {
+    margin: 0;
+}
+section.similar_articles {
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1.15em;
+    font-weight: 400;
+    line-height: 1.5em;
+    padding: 1em 0;
+    text-align: center;
+}
+section.similar_articles a {
+    color: #477B96;
+    text-decoration: none;
+}
+section.similar_articles a:hover {
+    text-decoration: underline;
+}
+section.similar_articles {
+    font-size: 1.35em;
+    font-weight: 300;
+}
+body div.post-content .tomorrow-comment, body div.post-content pre .comment, body div.post-content pre .title {
+    color: #8E908C;
+}
+body div.post-content .tomorrow-red, body div.post-content pre .variable, body div.post-content pre .attribute, body div.post-content pre .tag, body div.post-content pre .regexp, body div.post-content pre .ruby .constant, body div.post-content pre .xml .tag .title, body div.post-content pre .xml .pi, body div.post-content pre .xml .doctype, body div.post-content pre .html .doctype, body div.post-content pre .css .id, body div.post-content pre .css .class, body div.post-content pre .css .pseudo {
+    color: #C82829;
+}
+body div.post-content .tomorrow-orange, body div.post-content pre .number, body div.post-content pre .preprocessor, body div.post-content pre .built_in, body div.post-content pre .literal, body div.post-content pre .params, body div.post-content pre .constant {
+    color: #F5871F;
+}
+body div.post-content .tomorrow-yellow, body div.post-content pre .class, body div.post-content pre .ruby .class .title, body div.post-content pre .css .rules .attribute {
+    color: #EAB700;
+}
+body div.post-content .tomorrow-green, body div.post-content pre .string, body div.post-content pre .value, body div.post-content pre .inheritance, body div.post-content pre .header, body div.post-content pre .ruby .symbol, body div.post-content pre .xml .cdata {
+    color: #718C00;
+}
+body div.post-content .tomorrow-aqua, body div.post-content pre .css .hexcolor {
+    color: #3E999F;
+}
+body div.post-content .tomorrow-blue, body div.post-content pre .function, body div.post-content pre .python .decorator, body div.post-content pre .python .title, body div.post-content pre .ruby .function .title, body div.post-content pre .ruby .title .keyword, body div.post-content pre .perl .sub, body div.post-content pre .javascript .title, body div.post-content pre .coffeescript .title {
+    color: #4271AE;
+}
+body div.post-content .tomorrow-purple, body div.post-content pre .keyword, body div.post-content pre .javascript .function {
+    color: #8959A8;
+}
+body div.post-content pre code {
+    color: #3D4962;
+    display: block;
+    line-height: 1.5;
+    padding: 10px;
+}
+body div.post-content p code {
+    background: none repeat scroll 0 0 #F8F8F8;
+    border: 1px solid #DDDDDD;
+    color: #C82829;
+    font-family: Menlo,"Bitstream Vera Sans Mono",monaco,"Courier New",courier,monospace;
+    font-size: 0.7em;
+    padding: 0.1em 0.5em;
+}
+body div.post-content code, body div.post-content pre {
+    background: inherit;
+    font-family: Menlo,"Bitstream Vera Sans Mono",monaco,"Courier New",courier,monospace;
+    font-size: 0.9em;
+}
+body div.post-content pre {
+    background: none repeat scroll 0 0 #F8F8F8;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    line-height: 1.75em;
+    margin: 2em auto;
+    overflow: auto;
+    padding: 0.5em;
+    width: 95%;
+    word-wrap: break-word;
+}
+body div.post-content pre {
+    margin: 1.5em auto;
+    width: 640px;
+}
+section.comments {
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 2px solid #CCCCCC;
+    margin: 1.5em auto 0;
+    padding: 1em 0 0.5em;
+    width: 100%;
+}
+section.comments {
+    width: 660px;
+}
+section.comments h2 {
+    color: #555555;
+    font-size: 1.05em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1.65em;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+section.comments h2 em {
+    letter-spacing: 0;
+    text-transform: none;
+}
+section.comments h2 span.expand {
+    color: #477B96;
+    cursor: pointer;
+    font-style: normal;
+    text-decoration: underline;
+}
+section.comments h2 span.expanded {
+    color: #555555;
+    cursor: default;
+    font-style: normal;
+    text-decoration: none;
+}
+section.comments ul.admin-controls {
+    border-bottom: 1px solid #EEEEEE;
+    list-style: none outside none;
+    margin: 0 auto 0.75em;
+    padding-bottom: 0.5em;
+    width: 100%;
+}
+section.comments ul.admin-controls:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+section.comments ul.admin-controls li {
+    display: inline;
+    text-align: center;
+}
+section.comments ul.admin-controls li a {
+    color: #CCCCCC;
+}
+section.comments ul.admin-controls li.starred a {
+    color: #FFDD00;
+}
+section.comments div.all_comments {
+    display: none;
+    margin: 1em 0 0;
+}
+section.comments div.all_comments div.comment {
+    border-bottom: 1px solid #EEEEEE;
+    margin-bottom: 0.5em;
+    padding: 1em 0 0;
+    width: 100%;
+}
+section.comments div.all_comments div.comment:first-child {
+    border-top: 1px solid #EEEEEE;
+}
+section.comments div.all_comments div.comment:last-child {
+    border-bottom: medium none;
+}
+section.comments div.all_comments div.comment:hover span.comment_admin a, section.comments div.all_comments div.comment:hover span.comment_admin b {
+    opacity: 1;
+}
+section.comments div.all_comments div.comment > h3 {
+    font-family: "kepler-std",Georgia,Times,serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0 0 0.2em;
+}
+section.comments div.all_comments div.comment > h3 span.comment_admin {
+    float: right;
+}
+section.comments div.all_comments div.comment > h3 span.comment_admin a {
+    color: #CCCCCC;
+    font-size: 0.7em;
+    margin-right: 0.2em;
+    opacity: 0;
+    transition: all 0.2s ease 0s;
+}
+section.comments div.all_comments div.comment > h3 span.comment_admin b {
+    color: #CCCCCC;
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    margin-right: 0.5em;
+    opacity: 0;
+    transition: all 0.2s ease 0s;
+}
+section.comments div.all_comments div.comment > h3 span.date {
+    color: #CCCCCC;
+    font-size: 0.8em;
+    font-weight: 300;
+    margin-left: 0.25em;
+}
+section.comments div.all_comments div.comment > h3 span.author.troll {
+    background: url("/svn/static/images/trollface.jpg") no-repeat scroll 0 0 / 40px 32px transparent;
+    color: #CCCCCC;
+    font-family: "Comic Sans MS",Arial;
+    margin-bottom: 10px;
+    padding: 0 0 12px 45px;
+}
+section.comments div.all_comments div.comment div.comment_body {
+    font-size: 1.15em;
+    font-weight: 400;
+    line-height: 1.25em;
+}
+section.comments div.all_comments div.comment div.comment_body p {
+    margin-bottom: 0.5em;
+}
+section.comments div.all_comments div.comment div.comment_body {
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+section.comments div.all_comments div.comment div.troll {
+    color: #CCCCCC;
+    font-family: "Comic Sans MS",Arial;
+}
+section.comments div.all_comments div.signaler {
+    background: none repeat scroll 0 0 #FCF6E3;
+    border: 1px solid #EDE3C8 !important;
+    margin-left: -2%;
+    margin-top: -1px;
+    padding: 2% 2% 0;
+    width: 100%;
+}
+section.comments div.all_comments div.signaler > h3 span.date {
+    background: url("/svn/static/images/signaler.png") no-repeat scroll 0 0 transparent;
+    padding: 5px 0 5px 30px;
+}
+section.comments div.all_comments div.signaler > h3 span.date {
+    background-image: url("/svn/static/images/signaler@2x.png");
+    background-size: 25px 25px;
+}
+section.comments div.all_comments div.signaler > h3 span.date {
+    color: #C6BB99;
+}
+section.comments div#form {
+    border-top: 1px solid #EEEEEE;
+    display: none;
+}
+section.comments div#form label {
+    display: none;
+}
+div#form, div#comment_form {
+    margin: 0.5em 0 0;
+    padding: 1em 0 0;
+}
+div#form:after, div#comment_form:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+div#form > h2, div#comment_form > h2 {
+    margin-bottom: 0.5em;
+}
+div#form span, div#comment_form span {
+    clear: right;
+    width: 100%;
+}
+div#form span, div#comment_form span {
+    float: left;
+    margin-right: 5%;
+    width: 45%;
+}
+div#form span span.email, div#comment_form span span.email {
+    margin: 0;
+}
+div#form span input, div#comment_form span input {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color -moz-use-text-color #EEEEEE;
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    font-family: "kepler-std",Georgia,Times,serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    padding: 5% 0.1em;
+    transition: all 0.2s ease 0s;
+    width: 100%;
+}
+div#form span input:focus, div#comment_form span input:focus {
+    border-bottom: 1px solid #BBBBBB;
+}
+div#form span.name label, div#form span.email label, div#comment_form span.name label, div#comment_form span.email label {
+    display: none;
+}
+div#form span.are_you_a_troll, div#comment_form span.are_you_a_troll {
+    border-bottom: 1px solid #EEEEEE;
+    color: #999999;
+    font-weight: 300;
+    margin-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+}
+div#form span.are_you_a_troll:after, div#comment_form span.are_you_a_troll:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+div#form span.are_you_a_troll select, div#comment_form span.are_you_a_troll select {
+    margin-top: -0.1em;
+}
+div#form div.thoughts, div#comment_form div.thoughts {
+    width: 100%;
+}
+div#form div.thoughts label, div#comment_form div.thoughts label {
+    display: none;
+}
+div#form div.thoughts textarea, div#comment_form div.thoughts textarea {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color -moz-use-text-color #EEEEEE;
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    font-family: "kepler-std",Georgia,Times,serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    height: 180px;
+    margin: 1em 0;
+    resize: none;
+    transition: all 0.2s ease 0s;
+    width: 100%;
+}
+div#form div.thoughts textarea:focus, div#comment_form div.thoughts textarea:focus {
+    border-bottom: 1px solid #BBBBBB;
+}
+div#form *:-moz-placeholder, div#comment_form *:-moz-placeholder {
+    color: #999999;
+}
+div#form input[type="button"], div#form input[type="submit"], div#comment_form input[type="button"], div#comment_form input[type="submit"] {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-color: #CCCCCC;
+    border-image: none;
+    border-radius: 6px 6px 6px 6px;
+    border-style: solid;
+    border-width: 1px 1px 2px;
+    clear: both;
+    color: #666666;
+    cursor: pointer;
+    float: left;
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    margin: -8px 0.75em 10px 0;
+    padding: 0.45em;
+    width: 100%;
+}
+div#form input[type="button"]:hover, div#form input[type="submit"]:hover, div#comment_form input[type="button"]:hover, div#comment_form input[type="submit"]:hover {
+    background: none repeat scroll 0 0 #00A264;
+    border-color: #016C43;
+    color: #FFFFFF;
+}
+div#form input[type="button"], div#form input[type="submit"], div#comment_form input[type="button"], div#comment_form input[type="submit"] {
+    margin-bottom: 0;
+    width: 30%;
+}
+div#form p, div#comment_form p {
+    color: #777777;
+    float: left;
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    line-height: 1.5em;
+    margin: 0.5em auto 1em;
+    text-align: center;
+    width: 100%;
+}
+div#form p, div#comment_form p {
+    text-align: left;
+}
+div#form p a, div#comment_form p a {
+    text-decoration: none;
+}
+div#form p code, div#comment_form p code {
+    background: none repeat scroll 0 0 #F8F8F8;
+    border: 1px solid #DDDDDD;
+    color: #666666;
+    font-family: Menlo,"Bitstream Vera Sans Mono",monaco,"Courier New",courier,monospace;
+    font-size: 0.8em;
+    margin-right: 0.5em;
+    padding: 0.1em 0.5em;
+}
+section.share {
+    display: none;
+}
+section.archives {
+    margin: 2.75em auto;
+    text-align: center;
+}
+section.archives {
+    margin: 0 auto;
+    width: 90%;
+}
+section.archives header {
+    margin: 1em auto 3em;
+    width: 100%;
+}
+section.archives header h1 {
+    color: #444444;
+    font-family: "acta-display",Georgia,Times,serif;
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 1.15em;
+    margin: 0 auto 0.25em;
+}
+section.archives header h1 {
+    font-size: 2.813em;
+}
+section.archives header h2 {
+    color: #999999;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.2em;
+    margin: 0 auto 1em;
+}
+section.archives header h2 a:hover {
+    color: #477B96;
+    text-decoration: underline;
+}
+section.archives h3 {
+    border-bottom: 2px solid #CCCCCC;
+    color: #555555;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1.65em;
+    margin: 0 auto 1em;
+    padding: 0 0 0.75em;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+section.archives h3 {
+    width: 660px;
+}
+section.archives ul {
+    margin: 0 0 2em;
+}
+section.archives li {
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1.25em;
+    line-height: 1.25em;
+    list-style: none outside none;
+    padding: 0.35em 0;
+}
+section.archives li a {
+    text-decoration: none;
+}
+section.archives li a:visited {
+    color: #BFC7CB;
+}
+section.archives li a:hover {
+    color: #477B96;
+    text-decoration: underline;
+}
+section.archives span.post-author {
+    color: #999999;
+    font-size: 0.8em;
+}
+section.archives span.post-author a {
+    color: #999999;
+}
+section.archives p.archives-link {
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1.25em;
+    line-height: 1.25em;
+    padding: 1em 10%;
+    text-align: center;
+    width: 80%;
+}
+body.all-authors section.authors {
+    text-align: center;
+}
+body.all-authors section.authors > header {
+    margin: 4em auto 2em;
+    width: 100%;
+}
+body.all-authors section.authors > header {
+    margin-top: 2em;
+}
+body.all-authors section.authors > header h1 {
+    color: #444444;
+    font-family: "acta-display",Georgia,Times,serif;
+    font-size: 1.75em;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 1.15em;
+    margin: 0 auto 0.35em;
+}
+body.all-authors section.authors > header h1 {
+    font-size: 2.813em;
+}
+body.all-authors section.authors > header h2 {
+    color: #999999;
+    font-size: 1.35em;
+    font-weight: 300;
+    line-height: 1.2em;
+    margin: 0 auto 1em;
+}
+body.all-authors section.authors > header h2 {
+    font-size: 1.5em;
+}
+body.all-authors section.authors > header h2 a:hover {
+    color: #477B96;
+    text-decoration: underline;
+}
+body.all-authors section.authors > h1 {
+    border-bottom: 2px solid #CCCCCC;
+    color: #555555;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1.65em;
+    margin: 0 auto 2em;
+    padding: 0 0 0.75em;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+body.all-authors section.authors > h1 {
+    width: 660px;
+}
+body.all-authors section.authors article.author {
+    display: inline-block;
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1.25em;
+    height: 240px;
+    line-height: 1.25em;
+    margin: 0 0.5em;
+    vertical-align: top;
+    width: 100px;
+}
+body.all-authors section.authors article.author:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+body.all-authors section.authors article.author {
+    margin: 0 0.75em 0 0;
+    width: 120px;
+}
+body.all-authors section.authors article.author a {
+    color: #2D5668;
+    text-decoration: none;
+}
+body.all-authors section.authors article.author a:hover {
+    text-decoration: underline;
+}
+body.all-authors section.authors article.author a.author-twitter {
+    color: #CCCCCC;
+}
+body.all-authors section.authors article.author span.location, body.all-authors section.authors article.author span.twitter {
+    color: #999999;
+    font-size: 0.8em;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.2em;
+}
+body.all-authors section.authors article.author img {
+    border-radius: 50px 50px 50px 50px;
+    margin: 0 auto 0.5em;
+}
+body.individual-author header.author-bio {
+    border-bottom: 2px solid #CCCCCC;
+    margin: 4em 0 2em;
+    padding-bottom: 2em;
+    width: 100%;
+}
+body.individual-author header.author-bio:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+body.individual-author header.author-bio span {
+    display: block;
+    margin: 1em auto;
+    text-align: center;
+    width: 100px;
+}
+body.individual-author header.author-bio span a {
+    background-size: 100% auto;
+    border-radius: 100px 100px 100px 100px;
+    display: block;
+    height: 100px;
+    overflow: hidden;
+    width: 100px;
+}
+body.individual-author header.author-bio h2 {
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+}
+body.individual-author header.author-bio p {
+    color: #666666;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.25em;
+    margin: 0.5em auto;
+    text-align: center;
+    width: 100%;
+}
+body.individual-author header.author-bio {
+    margin-top: 2em;
+}
+body.individual-author header.author-bio p {
+    font-size: 1.35em;
+    width: 660px;
+}
+body.individual-author article.post, body.individual-author article.tumble {
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 3em;
+    margin-top: 2.5em;
+    padding-bottom: 4em;
+}
+footer {
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1.1em;
+    margin: 1em 0 0;
+    width: 100%;
+}
+footer section {
+    width: 100%;
+}
+footer section.proud {
+    line-height: 1.25em;
+    margin: 0 0 1em;
+}
+footer section.proud:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+footer section.proud div {
+    padding: 2em 5%;
+    text-align: center;
+    width: 90%;
+}
+footer section.proud div {
+    float: left;
+    margin: 0;
+}
+footer section.proud div h3 {
+    color: #333333;
+    line-height: 1.2em;
+    margin: 0 0 0.5em;
+}
+footer section.proud h2 {
+    border-bottom: 2px solid #CCCCCC;
+    color: #555555;
+    font-family: "kepler-std",Georgia,Times,serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1.65em;
+    margin: 0 auto;
+    padding: 0 0 0.75em;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+footer section.proud h2 {
+    margin-bottom: 2em;
+}
+footer section.proud h2 {
+    width: 660px;
+}
+footer section.proud div.basecamp, footer section.proud div.breeze {
+    border-bottom: 1px solid #CCCCCC;
+    overflow: visible;
+}
+footer section.proud div.basecamp h3 a, footer section.proud div.breeze h3 a {
+    background: url("/svn/static/images/breeze.png") no-repeat scroll center 5px / 220px 57px transparent;
+    color: #333333;
+    display: block;
+    overflow: visible;
+    padding-top: 80px;
+    text-decoration: none;
+    width: 100%;
+}
+footer section.proud div.basecamp, footer section.proud div.breeze {
+    border-bottom: medium none;
+    border-right: 1px solid #CCCCCC;
+    overflow: visible;
+    padding: 0.5em 7.5% 1em 6.5%;
+    width: 35%;
+}
+footer section.proud div.basecamp h3 a, footer section.proud div.breeze h3 a {
+    background-size: 100% auto;
+    padding-top: 100px;
+}
+footer section.proud div.rework h3 a {
+    background: url("/svn/static/images/rework.png") no-repeat scroll center 0 / 129px 97px transparent;
+    color: #333333;
+    display: block;
+    padding-top: 110px;
+    text-decoration: none;
+    width: 100%;
+}
+footer section.proud div.rework {
+    margin-bottom: 1em;
+    padding: 0.5em 7.5% 1em;
+    width: 35%;
+}
+footer section.browse {
+    border-top: 2px solid #CCCCCC;
+    padding: 1.25em 0 0;
+}
+footer section.browse div.categories h2 {
+    color: #555555;
+    font-family: "kepler-std",Georgia,Times,serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 1.25em;
+    margin: 0 0 0.5em;
+    text-transform: uppercase;
+}
+footer section.browse div.categories h2 span {
+    display: none;
+}
+footer section.browse div.categories h2 span {
+    display: inline;
+}
+footer section.browse div.categories ul {
+    list-style: none outside none;
+    text-align: center;
+}
+footer section.browse div.categories ul li {
+    color: #DDDDDD;
+    display: inline;
+    font-size: 1.35em;
+    line-height: 1.5em;
+    margin: 0 0.15em 0 0;
+}
+footer section.browse div.categories ul li:after {
+    content: " /";
+}
+footer section.browse div.categories ul li:last-child:after {
+    content: "";
+}
+footer section.browse div.categories ul li a {
+    color: #477B96;
+    text-decoration: underline;
+}
+footer section.browse div.categories ul li a:hover {
+    color: #2D5668;
+    text-decoration: none;
+}
+footer section.browse div.categories input[name="q"] {
+    background: url("/svn/static/images/search.png") no-repeat scroll 0.5em 50% white;
+    border-color: #999999 #CCCCCC #CCCCCC #999999;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    margin: 1.25em auto;
+    padding: 0.5em 0 0.5em 1.5em;
+    transition: all 0.2s ease 0s;
+    width: 90%;
+}
+footer section.browse div.categories input[name="q"]:focus {
+    border-color: #477B96;
+}
+footer section.browse div.categories input[name="q"] {
+    font-size: 1em;
+    width: 80%;
+}
+footer section.read_more {
+    margin: 3em auto 1em;
+}
+footer section.read_more div {
+    width: 100%;
+}
+footer section.read_more div.best_of {
+    margin-bottom: 2em;
+}
+footer section.read_more h2 {
+    border-bottom: 2px solid #DDDDDD;
+    color: #555555;
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    line-height: 1.25em;
+    margin-bottom: 0.75em;
+    padding-bottom: 0.75em;
+}
+footer section.read_more h2 span {
+    font-weight: 300;
+}
+footer section.read_more h2 small {
+    display: none;
+}
+footer section.read_more h2 small {
+    display: inline;
+}
+footer section.read_more li {
+    border-bottom: 1px solid #DDDDDD;
+    font-size: 0.85em;
+    font-weight: 400;
+    line-height: 1.25em;
+    list-style: none outside none;
+    margin-bottom: 0.75em;
+    padding: 0 0 1em;
+}
+footer section.read_more li:last-child {
+    border-bottom: medium none;
+}
+footer section.read_more li a:visited {
+    color: #BFC7CB;
+}
+footer section.read_more li a:hover {
+    color: #2D5668;
+    text-decoration: none;
+}
+footer section.read_more li a:active {
+    color: #000000;
+    text-decoration: none;
+}
+footer section.read_more li.all a:visited {
+    color: #477B96;
+}
+footer section.read_more li {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+}
+footer section.read_more {
+    margin-bottom: 0;
+}
+footer section.read_more:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+footer section.read_more div {
+    float: left;
+    width: 48%;
+}
+footer section.read_more div.best_of {
+    margin-right: 4%;
+}
+footer section.jobs {
+    background: none repeat scroll 0 0 #E4EFC7;
+    font-size: 0.9em;
+    line-height: 1.25em;
+    margin: 1.25em auto 0;
+    padding: 1em 5%;
+    text-align: center;
+    width: 90%;
+}
+footer section.jobs a {
+    color: #618430;
+}
+footer section.jobs div.job {
+    display: inline;
+    width: auto;
+}
+footer section.jobs {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 1.75em;
+}
+footer section.ads {
+    line-height: 1.25em;
+    margin: 0 0 1em;
+}
+footer section.ads:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+footer section.ads div {
+    border-bottom: 1px solid #CCCCCC;
+    padding: 2em 5%;
+    text-align: center;
+    width: 90%;
+}
+footer section.ads div {
+    float: left;
+    margin: 0;
+}
+footer section.ads div h2 {
+    color: #333333;
+    line-height: 1.2em;
+    margin: 0 0 0.5em;
+}
+footer section.ads div.the_deck {
+    border-bottom: medium none;
+    border-right: 1px solid #CCCCCC;
+    padding: 0.5em 5% 1em;
+    width: 39%;
+}
+footer section.ads div.the_deck img {
+    display: block;
+    margin: 1em auto;
+}
+footer section.ads div.the_deck i {
+    display: inline-block;
+    font-family: "ProximaNova","freight-sans-pro",Helvetica,Arial,sans-serif;
+    font-size: 0.9em;
+    font-style: normal;
+    margin-top: 0.75em;
+}
+footer section.ads div.the_deck i a {
+    color: #999999;
+    text-decoration: none;
+}
+footer section.ads div.rss {
+    display: none;
+    margin-top: 1em;
+    padding: 0 5%;
+}
+footer section.ads div.rss:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+footer section.ads div.rss {
+    border: medium none;
+    display: block;
+    line-height: 1.25em;
+    margin: 0;
+    padding: 3em 5% 0;
+    width: 38%;
+}
+footer section.ads div.rss a {
+    background: none repeat scroll 0 0 #EF8B22;
+    border-radius: 6px 6px 6px 6px;
+    clear: left;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 0.75em 20% 0;
+    padding: 0.75em;
+    text-decoration: none;
+    width: 60%;
+}
+footer section.footnote {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    margin-top: 3em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+footer section.footnote p.starterleague, footer section.footnote p.links, footer section.footnote p.copyright {
+    margin-bottom: 1em;
+}
+footer section.footnote {
+    font-size: 0.9em;
+}
+footer section.footnote p.links {
+    margin: 0;
+}
+section.styleguide header {
+    text-align: center;
+}
+section.styleguide header h1 {
+    border-bottom: 1px dashed #CCCCCC;
+    color: #444444;
+    font-family: "acta-display",Georgia,Times,serif;
+    font-size: 2em;
+    margin: 2em auto;
+    padding-bottom: 2em;
+}
+section.styleguide article {
+    border-bottom: 1px dashed #CCCCCC;
+    margin: 0 auto 6em !important;
+    padding-bottom: 6em;
+    width: 100%;
+}
+section.styleguide h2 {
+    margin: 0 auto 0.25em !important;
+}
+section.styleguide h2, section.styleguide p {
+    line-height: 1.2em !important;
+    text-align: center;
+}
+section.styleguide img {
+    display: block;
+    margin: 0 auto;
+}
+section.styleguide h3 {
+    color: #666666;
+    font-size: 2.5em;
+    font-weight: 400;
+    margin: 0 0 3em;
+    text-align: center;
+}
+
+

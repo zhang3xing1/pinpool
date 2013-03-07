@@ -1,12 +1,19 @@
-source 'https://rubygems.org'
+source 'http://ruby.taobao.org'
 
-gem 'rails', '3.2.12'
+gem 'rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+gem 'pg'
+gem 'thin'
+gem 'puma'
 
+
+gem 'devise'
+gem 'slim'
+gem 'kaminari'
+gem 'nokogiri'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -21,6 +28,25 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+
+
+#dev group gem
+gem "capistrano"
+gem "cape"
+gem "magic_encoding"
+gem "annotate"
+
+gem "fabrication"
+gem "rspec-rails"
+gem "ffaker"
+gem "database_cleaner"
+gem "guard"
+gem "guard-rspec"
+gem "guard-spork"
+gem "guard-livereload"
+gem 'database_cleaner'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Pinpool::Application.config.secret_token = '3057b5fc40dccc694d234ffd16052695d6b97b422eee0b863cfe6d7cdffb52068c5342ab954bbe6d25e5ead77e8576e3e4c3f8c40cb9eaabdc4529d0d3d4c195'
+Pinpool::Application.config.secret_token = '899b739d63baa1e8095f6440b30a9757d0ccaa90436b0092312fda009b95eaaed8025fc8051ab0447b05699149b1680e0eaefdd02034872a353f99d8ae68d62c'

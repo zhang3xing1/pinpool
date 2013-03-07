@@ -15,4 +15,7 @@
 /tmp
 
 # Ignore all yml file for setting
-.yml
+*.yml
+
+/.data
+.DS_Store
