@@ -17,7 +17,7 @@ describe Article do
 
  			it "has a user and category." do
         @article.category.name.size.should > 0
-        @article.user.name.size.should > 0
+        @article.user.email.size.should > 0
  			end
  		end	
 end

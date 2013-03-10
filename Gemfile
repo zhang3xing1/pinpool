@@ -29,8 +29,6 @@ end
 
 gem 'jquery-rails'
 
-
-
 #dev group gem
 gem "capistrano"
 gem "cape"

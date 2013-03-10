@@ -1,9 +1,20 @@
 Pinpool::Application.routes.draw do
-  get "pages/dashboard"
+  get "articles/index"
 
-  devise_for :admins
+  root :to => 'pages#home'
+
+  get "dashboard" => "articles#index"
+
+  # devise_for :admins
 
   devise_for :users
+
+  devise_scope :user do
+    get "sign_in"   =>    "devise/sessions#new"
+    get "sign_up"   =>    "devise/registrations#new"
+    get "sign_out"  =>    "devise/sessions#destroy"
+  end
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -54,7 +65,7 @@ Pinpool::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'pages#dashboard'
+
 
   # See how all your routes lay out with "rake routes"
 
