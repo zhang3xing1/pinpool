@@ -6,5 +6,7 @@
 		- if user_signed_in? then
 			li
 				==link_to "DashBoard", dashboard_url
+			li
+				==link_to "name", account_url(current_user)
 		li
 			== sign_status

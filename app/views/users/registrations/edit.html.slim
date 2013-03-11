@@ -1,0 +1,41 @@
+== render 'pages/nav'
+h2 Edit Account
+.container
+  = form_for(current_user, :url => registration_path(current_user), :html => { :method => :put }) do |f| 
+
+    = f.label :name
+    = f.text_field :name, :autofocus => true
+    <br />
+    .clear
+
+    = f.label :email
+    = f.email_field :email, :autofocus => false
+    <br />
+    .clear
+    
+    = f.label :password
+    | (leave blank if you don't want to change it)
+    .clear
+    = f.password_field :password, :autocomplete => "off"
+    <br />
+
+    = f.label :password_confirmation
+    .clear
+    = f.password_field :password_confirmation
+    <br />
+
+    = f.label :current_password
+    | (we need your current password to confirm your changes)
+    .clear
+    = f.password_field :current_password
+    <br />
+
+    = f.submit "Update"
+
+  h2 Cancel my account
+
+  / p Unhappy? 
+  / = button_to "Cancel my account", registration_path(@user), :data => { :confirm => "Are you sure?" }, :method => :delete
+
+
+  = link_to "Back", :back

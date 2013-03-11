@@ -1,3 +1,4 @@
+== render 'pages/nav'
 .container
 	p Article List
 	.page_nav
@@ -17,9 +18,9 @@
 					td 
 						== article.updated_at
 					td 
-						== link_to '📝', edit_article_url(article)
+						== link_to '📝', edit_article_url(article), :class => 'emoji'
 	.page_nav
-		= link_to_previous_page @articles, '👈', :class => 'emoji'
-		= link_to_next_page @articles, '👉', :class => 'emoji'
+		= link_to_previous_page @articles, '👈', 	:class => 'emoji'
+		= link_to_next_page 		@articles, '👉', 	:class => 'emoji'
 
 

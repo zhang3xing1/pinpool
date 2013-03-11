@@ -1,21 +1,28 @@
 Pinpool::Application.routes.draw do
   root :to => 'pages#home'
 
-  get "dashboard"         =>  "users#dashboard"
-
-  get "articles/manage"   =>  "articles#manage"
+  # Article
+  get "articles/manage"         =>  "articles#manage"
   resources :articles
 
-  # devise_for :admins
-
+  # User
+  get "dashboard"               =>  "users#dashboard"
+  match "account"               =>  "users#edit",                 
+          :via => :get,     :as => :account
+  ## User registration info
+  match "account/:id/edit"      =>  "users#registration_edit",  
+          :via => :get,     :as => :registration
+  match "account/:id/edit"      =>  "users#registration_update",
+          :via => :put,     :as => :registration
   devise_for :users
 
   devise_scope :user do
-    get "sign_in"   =>    "devise/sessions#new"
-    get "sign_up"   =>    "devise/registrations#new"
-    get "sign_out"  =>    "devise/sessions#destroy"
-  end
+    get "sign_in"               =>  "devise/sessions#new"
+    get "sign_up"               =>  "devise/registrations#new"
+    get "sign_out"              =>  "devise/sessions#destroy"
+ end
 
+  # devise_for :admins
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

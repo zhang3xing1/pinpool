@@ -1,0 +1,15 @@
+== render 'pages/nav'
+h3
+	=="#{current_user.name} Account"
+.command-board 
+	.command-box
+		.title-bar
+			h4 Setting
+			h5 password,name and email
+		.command-list-bar
+			.command-list
+				h5 Account Setting
+				ul
+					li
+						== link_to 'change your name, email or password', registration_url, :method => :get
+
