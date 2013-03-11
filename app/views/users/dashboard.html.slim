@@ -1,67 +1,8 @@
-header.main
-	h1 DashBoard
+== render 'pages/nav'
+.container
+	.cell
+		== link_to "Articles", articles_url
+		== link_to "🔨", articles_manage_url, :class => 'emoji'
+		- current_user.articles.size
 
-.content
-
-	.container
-		article.post id="text_#{Time.now}"
-			header.post-header id='text_1'
-				h1.class_article 
-					a
-						| BlogTitle
-				h2
-					| Edmond
-					em wrote this on
-					span.post-date 2013/03/07
-					span.post-discuss 1 comment
-			.post_content
-				| 这该篇文章的正文
-		
-		article id='photo_1'
-			.post_content.photo
-				figure
-					img src="img.gif"
-				p.description 俄罗斯陨石雨
-			.tumble-details
-					span.author Edmond
-					em on
-					span.date	2013/02/01
-					span.comment_activity 1 comments
-
-		article id='quote_345'
-			.post_content.quote
-			blockquote
-				p But tethering the Yahoos to their stalls in the company’s offices does not seem like the right way to go about boosting their output. Plenty of evidence suggests that letting employees work from home is good for productivity. It allows them to use their time more efficiently and to spend more time with their families and less fuming in traffic jams or squashed on trains. It can reduce companies’ costs… You can shackle a Yahoo to his desk, but you can’t make him feel the buzz.
-			.source
-				| Mayer Culpa
-			.tumble-details
-					span.author Edmond
-					em on
-					span.date	2013/01/01
-					span.comment_activity 1 comments
-
-footer
-	.container
-		section.browse
-			.categories
-			ul
-				h3 主要的大类，小类用tag
-				li category1
-				li category2
-				li category3
-				li category4
-		section.read_more
-			.best_of
-				h3 text3
-				h3 text4
-			.latest
-				h3 text12
-				h3 text13
-		section.ads
-				h3 ad1
-				h3 ad2
-		section.footnotes
-			p.copyright	Done is better than perfect.
-			p.day	
-				== Time.now
 

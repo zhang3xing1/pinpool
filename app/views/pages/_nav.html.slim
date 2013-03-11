@@ -1,0 +1,10 @@
+.nav
+	ul
+		li.quote Sing in your own voice. 堆砌的信息都是垃圾。
+		li.home
+			==link_to "Home", root_url
+		- if user_signed_in? then
+			li
+				==link_to "DashBoard", dashboard_url
+		li
+			== sign_status

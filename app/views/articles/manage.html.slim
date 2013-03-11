@@ -1,0 +1,25 @@
+.container
+	p Article List
+	.page_nav
+		= link_to_previous_page @articles, '👈', :class => 'emoji'
+		= link_to_next_page @articles, '👉', :class => 'emoji'
+	.data-list
+		table
+			thead
+				tr
+					th Title
+					th Date
+			tbody
+			- @articles.each do |article|
+				tr
+					td
+						== link_to article.title, article_url(article)
+					td 
+						== article.updated_at
+					td 
+						== link_to '📝', edit_article_url(article)
+	.page_nav
+		= link_to_previous_page @articles, '👈', :class => 'emoji'
+		= link_to_next_page @articles, '👉', :class => 'emoji'
+
+

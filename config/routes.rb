@@ -1,9 +1,10 @@
 Pinpool::Application.routes.draw do
-  get "articles/index"
-
   root :to => 'pages#home'
 
-  get "dashboard" => "articles#index"
+  get "dashboard"         =>  "users#dashboard"
+
+  get "articles/manage"   =>  "articles#manage"
+  resources :articles
 
   # devise_for :admins
 

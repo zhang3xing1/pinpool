@@ -1,6 +1,4 @@
-header.main
-	h1 DashBoard
-
+== render 'pages/nav'
 .content
 
 	.container
@@ -39,6 +37,8 @@ header.main
 					em on
 					span.date	2013/01/01
 					span.comment_activity 1 comments
+		more
+			== link_to_next_page @articles, 'Next Page'
 
 footer
 	.container
