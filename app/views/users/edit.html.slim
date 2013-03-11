@@ -11,5 +11,5 @@ h3
 				h5 Account Setting
 				ul
 					li
-						== link_to 'change your name, email or password', registration_url, :method => :get
+						== link_to 'change your name, email or password', registration_url(current_user), :method => :get
 
