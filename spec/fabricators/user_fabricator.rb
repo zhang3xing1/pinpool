@@ -19,6 +19,7 @@
 #
 
 Fabricator(:user) do
+	name				{Faker::Internet.user_name}
   email				{Faker::Internet.email}
   password		{Faker::LoremCN.sentence}
 end

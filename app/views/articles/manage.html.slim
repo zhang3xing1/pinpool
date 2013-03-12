@@ -1,6 +1,8 @@
 == render 'pages/nav'
 .container
-	p Article List
+	h3 Article List
+	.button
+	= link_to 'New Article', new_article_url
 	.page_nav
 		= link_to_previous_page @articles, '👈', :class => 'emoji'
 		= link_to_next_page @articles, '👉', :class => 'emoji'
@@ -9,16 +11,20 @@
 			thead
 				tr
 					th Title
+					th Category
 					th Date
+					th Status
 			tbody
 			- @articles.each do |article|
 				tr
 					td
 						== link_to article.title, article_url(article)
+					td
+						== link_to article.category.name, "#"
 					td 
 						== article.updated_at
 					td 
-						== link_to '📝', edit_article_url(article), :class => 'emoji'
+						== article.status
 	.page_nav
 		= link_to_previous_page @articles, '👈', 	:class => 'emoji'
 		= link_to_next_page 		@articles, '👉', 	:class => 'emoji'

@@ -12,9 +12,19 @@
 #
 
 class Article < ActiveRecord::Base
-  attr_accessible :ccontent
+  attr_accessible :content, :title, :status
+  has_one					:category
   belongs_to 			:user
   belongs_to 			:category
 
+  validates 			:title, :content, :status, presence: true
+
+  after_save 			:default_status
+
   paginates_per 30
+
+  private
+  	def default_status
+  		self.status = 'draft' if self.status.nil?
+  	end
 end
