@@ -17,9 +17,9 @@ class Article < ActiveRecord::Base
   belongs_to 			:user
   belongs_to 			:category
 
-  validates 			:title, :content, :status, presence: true
+  validates 			:title, :content, presence: true
 
-  after_save 			:default_status
+  before_save 			:default_status
 
   paginates_per 30
 

@@ -15,7 +15,7 @@ require 'spec_helper'
 
 describe Article do
     before(:each) do
-        @article 			      = 	Fabricate(:article)
+        @article 			      = 	Fabricate.build(:article)
         @user 				      = 	Fabricate(:user)
         @category           = 	Fabricate(:category)
         @article.user       = 	@user
@@ -25,21 +25,20 @@ describe Article do
     #  subject {@user}
     describe "when first saving," do
       it "has a content." do
+        @article.status = 'draft'
         @article.save!
         @article.content.size.should > 0
  	    end
 
  	    it "has a user and category." do
+        @article.status = 'draft'
         @article.save!
         @article.category.name.size.should > 0
         @article.user.email.size.should > 0
-        p @article.status
  	    end
 
       it "staus = draft" do
-        @article.status         = nil
-        @article.should_receive(:default_status)
-        @article.save!
+        @article.save
         @article.status.should == 'draft'
       end
 
