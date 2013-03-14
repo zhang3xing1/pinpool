@@ -1,2 +1,19 @@
 == render 'pages/nav'
-== @article.content
+== form_for(@article) do |f|
+	== f.label :title
+	== f.text_field :title
+	.clear
+	== f.label :content
+	== f.text_area :content
+	.clear
+	.category-list
+	span.category 
+		=@article.category.name
+
+	- @categories.each do	|category|	
+		span -
+		span.category
+			= category.name
+
+	.clear
+	== f.submit 'Update'

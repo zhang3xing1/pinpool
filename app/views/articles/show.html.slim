@@ -1,0 +1,19 @@
+== render 'pages/nav'
+.content
+	.container
+		article.post id="article_#{@article.id}"
+			header.post-header id="article_#{@article.id}"
+				h2.class_article 
+					a
+						=@article.title
+				h3
+					= current_user.name
+					em wrote this on
+					span.post-date 
+						= @article.updated_at.strftime('%F %R')
+					span.post-discuss 1 comment
+			.post_content
+				== text2html @article.content
+			.button.article-edit
+				- if current_user == @article.user
+					= link_to 'Edit', edit_article_url(@article)

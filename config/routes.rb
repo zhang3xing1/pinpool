@@ -15,13 +15,20 @@ Pinpool::Application.routes.draw do
   match "account/:id/edit"      =>  "users#registration_update",
           :via => :put,     :as => :registration
 
-  # devise_for :users
+
+  # https://github.com/plataformatec/devise/issues/1615
+  devise_for :users, 
+    :controllers => { :sessions => 'devise/sessions', :registrations => 'devise/registrations' }, 
+    :skip => [:sessions, :registrations]
+
   devise_scope :user do
-    get "sign_in"               =>  "devise/sessions#new"
-    post"sign_in"               =>  "devise/sessions#create"
-    get "sign_up"               =>  "devise/registrations#new"
-    get "sign_out"              =>  "devise/sessions#destroy"
- end
+    get   "sign_in"             =>  "devise/sessions#new"
+    get   "sign_up"             =>  "devise/registrations#new"
+    get   "sign_out"            =>  "devise/sessions#destroy"
+
+    post  "sign_in"             =>  "devise/sessions#create"
+    post  "sign_up"             =>  "devise/registrations#create"
+  end
 
   # devise_for :admins
 

@@ -29,6 +29,9 @@ end
 
 gem 'jquery-rails'
 
+# markdown
+gem 'rdiscount'
+
 #dev group gem
 gem "capistrano"
 gem "cape"
@@ -45,6 +48,10 @@ gem "guard-spork"
 gem "guard-livereload"
 gem 'database_cleaner'
 
+group :development do
+  gem 'ruby_gntp'
+  gem 'terminal-notifier-guard'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

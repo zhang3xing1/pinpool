@@ -1,0 +1,24 @@
+== render 'pages/nav'
+h3 Sign up
+
+= current_user.class
+= form_for(resource, :as => resource_name, :url => sign_up_path) do |f| 
+	-devise_error_messages!
+
+	= f.label :name
+	= f.email_field :name, :autofocus => true
+	<br />
+
+	= f.label :email
+	= f.email_field :email, :autofocus => true
+	<br />
+
+    = f.label :password
+    = f.password_field :password
+    <br />
+    = f.label :password_confirmation
+	= f.password_field :password_confirmation
+	<br />
+
+	= f.submit "Sign up"
+

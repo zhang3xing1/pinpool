@@ -19,7 +19,7 @@ class Article < ActiveRecord::Base
 
   validates 			:title, :content, presence: true
 
-  before_save 			:default_status
+  before_save 		:default_status
 
   paginates_per 30
 

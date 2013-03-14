@@ -30,12 +30,12 @@ describe Article do
         @article.content.size.should > 0
  	    end
 
- 	    it "has a user and category." do
+ 	  it "has a user and category." do
         @article.status = 'draft'
         @article.save!
         @article.category.name.size.should > 0
         @article.user.email.size.should > 0
- 	    end
+ 	  end
 
       it "staus = draft" do
         @article.save

@@ -29,4 +29,4 @@
 		= link_to_previous_page @articles, '👈', 	:class => 'emoji'
 		= link_to_next_page 		@articles, '👉', 	:class => 'emoji'
 
-
+		=select("post", "person_id", @articles.collect {|p| [ p.title, p.id ] }, {:prompt => 'Select Person'})

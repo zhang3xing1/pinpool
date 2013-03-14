@@ -1,0 +1,14 @@
+footer
+	.container
+		section.browse
+			.categories
+			ul
+				h3 Category
+				- @categories.each do |category|
+					li 
+						= category.name
+						
+		section.footnotes
+			span.copyright	Done is better than perfect. #{"  "}
+			span.day	
+				== Time.now.strftime('%F %R')
