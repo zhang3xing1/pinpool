@@ -1,6 +1,7 @@
 == render 'pages/nav'
 .content
 	.container
+		= render 'flash_message'
 		article.post id="article_#{@article.id}"
 			header.post-header id="article_#{@article.id}"
 				h2.class_article 
@@ -14,6 +15,10 @@
 					span.post-discuss 1 comment
 			.post_content
 				== text2html @article.content
+				.category-list
+					=label :article, :Category, :class => 'category'
+					span.category.selected
+						=@article.category.name
 			.button.article-edit
 				- if current_user == @article.user
 					= link_to 'Edit', edit_article_url(@article)

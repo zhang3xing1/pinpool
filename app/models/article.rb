@@ -12,7 +12,7 @@
 #
 
 class Article < ActiveRecord::Base
-  attr_accessible :content, :title, :status
+  attr_accessible :content, :title, :status, :category
   has_one					:category
   belongs_to 			:user
   belongs_to 			:category
@@ -21,7 +21,7 @@ class Article < ActiveRecord::Base
 
   before_save 		:default_status
 
-  paginates_per 30
+  paginates_per   30
 
   private
   	def default_status

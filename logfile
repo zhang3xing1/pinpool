@@ -1,2 +1,7 @@
 FATAL:  lock file "postmaster.pid" already exists
 HINT:  Is another postmaster (PID 36476) running in data directory "/usr/local/var/postgres"?
+LOG:  database system was shut down at 2013-03-15 11:35:32 CST
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  missing FROM-clause entry for table "users" at character 32
+STATEMENT:  DELETE FROM "categories" WHERE "users"."id" = 3 AND "categories"."id" = 3

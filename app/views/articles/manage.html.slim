@@ -1,32 +1,36 @@
 == render 'pages/nav'
-.container
-	h3 Article List
-	.button
-	= link_to 'New Article', new_article_url
-	.page_nav
-		= link_to_previous_page @articles, '👈', :class => 'emoji'
-		= link_to_next_page @articles, '👉', :class => 'emoji'
-	.data-list
-		table
-			thead
-				tr
-					th Title
-					th Category
-					th Date
-					th Status
-			tbody
-			- @articles.each do |article|
-				tr
-					td
-						== link_to article.title, article_url(article)
-					td
-						== link_to article.category.name, "#"
-					td 
-						== article.updated_at
-					td 
-						== article.status
-	.page_nav
-		= link_to_previous_page @articles, '👈', 	:class => 'emoji'
-		= link_to_next_page 		@articles, '👉', 	:class => 'emoji'
+.content
+	.container
+		= render 'flash_message'
+		h3 Article List
+		.button
+		= link_to 'New Article', new_article_url
+		.page_nav
+			= link_to_previous_page @articles, '👈', :class => 'emoji'
+			= link_to_next_page @articles, '👉', :class => 'emoji'
+		.data-list
+			table
+				thead
+					tr
+						th 
+						th Title
+						th Category
+						th Date
+						th Status
+				tbody
+				- @articles.each do |article|
+					tr
+						td
+							== link_to 'd', article_url(article), :method => :delete
+						td
+							== link_to article.title, article_url(article)
+						td
+							== link_to article.category, "#"
+						td 
+							== article.updated_at
+						td 
+							== article.status
+		.page_nav
+			= link_to_previous_page @articles, '👈', 	:class => 'emoji'
+			= link_to_next_page 		@articles, '👉', 	:class => 'emoji'
 
-		=select("post", "person_id", @articles.collect {|p| [ p.title, p.id ] }, {:prompt => 'Select Person'})

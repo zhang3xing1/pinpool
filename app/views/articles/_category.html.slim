@@ -1,0 +1,8 @@
+
+-categories.each do	|category|
+	-if article_category.nil? || category.id != article_category.id
+		span.category
+			= form.radio_button('category',category.id )
+			= form.label category.name
+.clear
+/ =select("post", "person_id", @articles.collect {|p| [ p.title, p.id ] }, {:prompt => 'Select Person'})

@@ -1,19 +1,19 @@
 == render 'pages/nav'
-== form_for(@article) do |f|
-	== f.label :title
-	== f.text_field :title
-	.clear
-	== f.label :content
-	== f.text_area :content
-	.clear
-	.category-list
-	span.category 
-		=@article.category.name
+.content
+	.container
+		= render 'flash_message'
+		== form_for(@article) do |f|
+			== f.label 			:title
+			== f.text_field :title
+			.clear
+			== f.label 			:content
+			== f.text_area 	:content
+			.clear
+			.category-list
+				== f.label 		:category , :class => 'category'
+				span.category.selected
+					== f.radio_button('category',@article_category.id, :checked => true)
+					== f.label @article_category.name
 
-	- @categories.each do	|category|	
-		span -
-		span.category
-			= category.name
-
-	.clear
-	== f.submit 'Update'
+				=render partial: "category", locals: {categories: @categories, form: f, article_category: @article_category}
+			== f.submit 'Update'
