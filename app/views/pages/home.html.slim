@@ -1,15 +1,24 @@
 =render 'nav'
 
 .container
-	.box-container 
-		a href="http://localhost:3000" class="box"
-			img src="face1.jpg"
-			h3 BookMark
-			p.product_description
-				| Fetch your bookmarks quickly. 
-		a href="http://localhost:3000" class="box"
-			img src="comming_soon.png"
-			h3 Coming soon...
-			p.product_description
-				| interesting tool
-.footer
+	.content
+		.production
+			a href="http://localhost:3000" class="box"
+				img src="face1.jpg"
+				h3 BookMark
+				p
+					| Fetch your bookmarks quickly. 
+			a href="http://localhost:3000" class="box"
+				img src="comming_soon.png"
+				h3 Coming soon...
+				p.product_description
+					| interesting tool
+			a href="http://localhost:3000" class="box"
+				img src="comming_soon.png"
+				h3 Coming soon...
+				p.product_description
+					| interesting tool
+	/ hr
+
+	.footer
+		|	PinPool, since 2013

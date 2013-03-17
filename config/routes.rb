@@ -1,5 +1,7 @@
 Pinpool::Application.routes.draw do
-  root :to => 'pages#home'
+  # pages 
+  root :to      => 'pages#home'
+  get 'platte'  => 'pages#platte'
 
   # Article
   get "articles/manage"         =>  "articles#manage"

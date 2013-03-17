@@ -5,3 +5,18 @@ LOG:  database system is ready to accept connections
 LOG:  autovacuum launcher started
 ERROR:  missing FROM-clause entry for table "users" at character 32
 STATEMENT:  DELETE FROM "categories" WHERE "users"."id" = 3 AND "categories"."id" = 3
+FATAL:  database "Friday" does not exist
+FATAL:  database "pinpool" does not exist
+FATAL:  role "pinpool_test" does not exist
+FATAL:  database "pinpool" does not exist
+FATAL:  database "Friday" does not exist
+FATAL:  database "template" does not exist
+ERROR:  unrecognized configuration parameter "databases"
+STATEMENT:  show databases;
+ERROR:  syntax error at or near ";" at character 5
+STATEMENT:  show;
+ERROR:  syntax error at or near ";" at character 6
+STATEMENT:  show
+	;
+FATAL:  role "pinpool_test" does not exist
+FATAL:  database "Friday" does not exist
