@@ -1,6 +1,9 @@
-
 -categories.each do	|category|
-	-if article_category.nil? || category.id != article_category.id
+	-if article_category.nil?
+		span.category
+			= form.radio_button('category',category.id, :checked => true )
+			= form.label category.name
+	-else category.id != article_category.id
 		span.category
 			= form.radio_button('category',category.id )
 			= form.label category.name

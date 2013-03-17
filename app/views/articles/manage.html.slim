@@ -3,8 +3,6 @@
 	.container
 		= render 'flash_message'
 		h3 Article List
-		.button
-		= link_to 'New Article', new_article_url
 		.page_nav
 			= link_to_previous_page @articles, '👈', :class => 'emoji'
 			= link_to_next_page @articles, '👉', :class => 'emoji'
@@ -25,7 +23,7 @@
 						td
 							== link_to article.title, article_url(article)
 						td
-							== link_to article.category, "#"
+							== link_to article.category.name, "#"
 						td 
 							== article.updated_at
 						td 

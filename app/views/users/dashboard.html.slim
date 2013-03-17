@@ -4,6 +4,8 @@ h2 dashboard
 	.cell
 		== link_to "Articles", articles_url
 		== link_to "🔨", articles_manage_url, :class => 'emoji'
+		.button
+			= link_to 'New Article', new_article_url
 		- current_user.articles.size
 
 

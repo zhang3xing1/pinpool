@@ -46,8 +46,7 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
-    if Article.find(params[:id])
-      Article.destroy(params[:id])
+    if Article.find(params[:id]) && Article.destroy(params[:id])
       redirect_to articles_manage_url, notice: "Article have been successfully deleted."
     else
       # raise
